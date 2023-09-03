@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`クリックイベントに対してaria-expandedが正しく反応しているか スナップショットテスト 1`] = `
+<div>
+  <button
+    aria-controls="navi"
+    aria-expanded="true"
+    type="button"
+  >
+    <span
+      class="block h-[1px] w-6 bg-main-textColor transition-transform duration-[500ms] translate-y-[7px] rotate-[-225deg]"
+    />
+    <span
+      class="mt-[6px] block h-[1px] w-6 bg-main-textColor transition-all duration-[500ms] scale-0"
+    />
+    <span
+      class="mt-[6px] block h-[1px] w-6 bg-main-textColor transition-all duration-[500ms] translate-y-[-7px] rotate-[225deg]"
+    />
+  </button>
+</div>
+`;
