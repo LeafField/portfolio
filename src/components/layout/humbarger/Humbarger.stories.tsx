@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Humbarger from "./Humbarger";
 
 const meta = {
-  title: "HumbargerButton",
+  title: "layout/HumbargerButton",
   component: Humbarger,
 } satisfies Meta;
 

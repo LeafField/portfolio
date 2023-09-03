@@ -16,6 +16,9 @@ exports[`クリックイベントに対してaria-expandedが正しく反応し�
     <span
       class="mt-[6px] block h-[1px] w-6 bg-main-textColor transition-all duration-[500ms] translate-y-[-7px] rotate-[225deg]"
     />
+    <span
+      class="absolute top-0 opacity-0"
+    />
   </button>
 </div>
 `;
