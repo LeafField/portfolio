@@ -20,7 +20,7 @@ const Layout: FC<Props> = ({ children }) => {
         }`}
       >
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </div>
     </>
