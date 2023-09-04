@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Headerの単体テスト スナップショットテスト 1`] = `
+<div>
+  <header
+    class="bg-whiteColor fixed left-0 top-0 w-full shadow-sm"
+  >
+    <div
+      class="mx-auto flex h-24 max-w-[1366px] items-center justify-between px-11 "
+    >
+      <h1>
+        <a
+          class="className text-[2rem]"
+          href="/"
+        >
+          LeafField
+        </a>
+      </h1>
+      <button
+        aria-controls="navi"
+        aria-expanded="false"
+        type="button"
+      >
+        <span
+          class="block h-[1px] w-6 bg-main-textColor transition-transform duration-[500ms] false"
+        />
+        <span
+          class="mt-[6px] block h-[1px] w-6 bg-main-textColor transition-all duration-[500ms] false"
+        />
+        <span
+          class="mt-[6px] block h-[1px] w-6 bg-main-textColor transition-all duration-[500ms] false"
+        />
+        <span
+          class="absolute top-0 opacity-0"
+        >
+          ハンバーガーメニュー
+        </span>
+      </button>
+    </div>
+  </header>
+</div>
+`;

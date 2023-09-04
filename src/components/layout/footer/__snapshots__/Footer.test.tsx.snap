@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footerの単体テスト スナップショットテスト 1`] = `
+<div>
+  <footer
+    class="flex items-center justify-center bg-mainColor py-[35px] text-white className"
+  >
+    <div
+      class="flex flex-col gap-y-[50px] text-center"
+    >
+      <h2>
+        <a
+          class="className text-[2rem]"
+          href="/"
+        >
+          LeafField
+        </a>
+      </h2>
+      <ul
+        class="flex flex-col gap-7 text-2xl sm:flex-row sm:gap-16"
+      >
+        <li>
+          <a
+            href="/portfolio"
+          >
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/LeafField"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/youko8713"
+            target="_blank"
+          >
+            X(Twitter)
+          </a>
+        </li>
+      </ul>
+      <small
+        class="text-base"
+      >
+        2023©LeafField
+      </small>
+    </div>
+  </footer>
+</div>
+`;
