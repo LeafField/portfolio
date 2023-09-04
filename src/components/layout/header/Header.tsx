@@ -1,11 +1,19 @@
 import React from "react";
 import { pacifico } from "../../../lib/font";
+import Humbarger from "../humbarger/Humbarger";
+import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="mx-auto flex h-24 max-w-[1366px] items-center justify-between px-11">
-      <h1 className={`${pacifico.className} text-[2rem]`}>LeafField</h1>
-      <button>三</button>
+    <header className="bg-whiteColor shadow-md">
+      <div className="mx-auto flex h-24 max-w-[1366px] items-center justify-between px-11 ">
+        <h1>
+          <Link className={`${pacifico.className} text-[2rem]`} href={`/`}>
+            LeafField
+          </Link>
+        </h1>
+        <Humbarger />
+      </div>
     </header>
   );
 };

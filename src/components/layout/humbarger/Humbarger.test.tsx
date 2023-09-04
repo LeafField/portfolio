@@ -12,7 +12,9 @@ describe("クリックイベントに対してaria-expandedが正しく反応し
   });
   it("クリック時", async () => {
     render(<Humbarger />);
-    const humbarger = screen.getByRole("button");
+    const humbarger = screen.getByRole("button", {
+      name: "ハンバーガーメニュー",
+    });
     await UserEvent.click(humbarger);
     expect(humbarger).toHaveAttribute("aria-expanded", "true");
   });

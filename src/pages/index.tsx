@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import Header from "../components/layout/header/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import Layout from "../components/layout/Layout";
 
 export default function Home() {
-  return <Header />;
+  return <div className="bg-whiteColor h-96"></div>;
 }

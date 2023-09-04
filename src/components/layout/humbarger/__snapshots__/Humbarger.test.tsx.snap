@@ -18,7 +18,9 @@ exports[`クリックイベントに対してaria-expandedが正しく反応し�
     />
     <span
       class="absolute top-0 opacity-0"
-    />
+    >
+      ハンバーガーメニュー
+    </span>
   </button>
 </div>
 `;

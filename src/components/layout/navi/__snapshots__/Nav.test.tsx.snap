@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navの単体テスト スナップショットテスト 1`] = `
+<div>
+  <nav
+    aria-hidden="true"
+    class="fixed right-0 top-0 z-0 text-main-textColor"
+    data-testid="navi"
+    id="navi"
+    role="navigation"
+  >
+    <h2
+      class="className mx-auto w-fit text-[64px]"
+    >
+      Menu
+    </h2>
+    <ul
+      class="className space-y-[58px] p-[58px] text-center text-4xl"
+    >
+      <li>
+        <a
+          href="/portfolio"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+        >
+          Contact
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/LeafField"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/youko8713"
+          target="_blank"
+        >
+          X(Twitter)
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
