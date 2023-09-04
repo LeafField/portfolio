@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Allowの単体テスト スナップショットテスト 1`] = `
+<div>
+  <div
+    class="absolute bottom-0 z-20"
+  >
+    <div
+      class="allow"
+    >
+      Scroll
+    </div>
+  </div>
+</div>
+`;

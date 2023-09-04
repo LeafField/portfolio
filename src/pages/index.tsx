@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Layout from "../components/layout/Layout";
+import TopPage from "../components/top-page/TopPage";
 
 export default function Home() {
-  return <div className="bg-whiteColor h-96"></div>;
+  return <TopPage />;
 }

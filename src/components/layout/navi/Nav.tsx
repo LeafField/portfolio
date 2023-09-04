@@ -10,7 +10,7 @@ const Nav = () => {
       id="navi"
       role="navigation"
       data-testid="navi"
-      aria-hidden={`${!humbarger}`}
+      aria-hidden={!humbarger}
       className={`fixed right-0 top-0 z-0 text-main-textColor`}
     >
       <h2 className={`${pacifico.className} mx-auto w-fit text-[64px]`}>
