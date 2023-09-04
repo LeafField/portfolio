@@ -3,7 +3,7 @@
 exports[`Headerの単体テスト スナップショットテスト 1`] = `
 <div>
   <header
-    class="bg-whiteColor shadow-md"
+    class="bg-whiteColor fixed left-0 top-0 w-full shadow-sm"
   >
     <div
       class="mx-auto flex h-24 max-w-[1366px] items-center justify-between px-11 "
