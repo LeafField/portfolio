@@ -3,12 +3,12 @@ import { pacifico } from "../../../../lib/font";
 
 const HeroText = () => {
   return (
-    <div className="relative z-20 max-w-[824px] space-y-[56px] border border-white p-6 text-white">
+    <div className="relative z-20 max-w-[824px] space-y-6 border border-white p-6 text-white lg:space-y-[56px]">
       <h2 className={`${pacifico.className} text-center text-3xl sm:text-5xl`}>
         Welcome <br className=" sm:hidden" />
         to my portfolio!
       </h2>
-      <p className="text-base leading-[150%] sm:text-2xl">
+      <p className="text-base leading-[150%] lg:text-2xl">
         はじめまして！私のポートフォリオサイトをご覧いただき、ありがとうございます。
         <br />
         このサイトを通じて私自身のスキルや経験をお伝えし、興味を持っていただけると嬉しいです。

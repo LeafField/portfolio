@@ -3,7 +3,7 @@
 exports[`HeroTextの単体テスト スナップショットテスト 1`] = `
 <div>
   <div
-    class="relative z-20 max-w-[824px] space-y-[56px] border border-white p-6 text-white"
+    class="relative z-20 max-w-[824px] space-y-6 border border-white p-6 text-white lg:space-y-[56px]"
   >
     <h2
       class="className text-center text-3xl sm:text-5xl"
@@ -15,7 +15,7 @@ exports[`HeroTextの単体テスト スナップショットテスト 1`] = `
       to my portfolio!
     </h2>
     <p
-      class="text-base leading-[150%] sm:text-2xl"
+      class="text-base leading-[150%] lg:text-2xl"
     >
       はじめまして！私のポートフォリオサイトをご覧いただき、ありがとうございます。
       <br />
