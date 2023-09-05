@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import useStore from "../../store";
 import Nav from "./navi/Nav";
+import { noto } from "../../lib/font";
 
 type Props = {
   children: ReactNode;
@@ -14,13 +15,12 @@ const Layout: FC<Props> = ({ children }) => {
     <>
       <Nav />
       <div
-        className={`relative z-10 shadow-xl transition-transform duration-500 ${
-          humbarger &&
-          " translate-x-[-70vw] translate-y-10 sm:translate-x-[-354px] sm:translate-y-[88px]"
+        className={`relative z-10 shadow-2xl transition-transform duration-500 ${
+          humbarger && " translate-x-[-70vw] sm:translate-x-[-354px] "
         }`}
       >
         <Header />
-        {children}
+        <main className={`${noto.className} `}>{children}</main>
         <Footer />
       </div>
     </>

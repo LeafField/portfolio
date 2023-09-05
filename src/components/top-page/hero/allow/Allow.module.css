@@ -1,0 +1,42 @@
+.allow {
+  color: white;
+  position: relative;
+  font-size: 24px;
+  width: fit-content;
+}
+
+.allow::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 130px;
+  background-color: white;
+  margin-inline: auto;
+}
+
+.allow::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 44px;
+  background-color: white;
+  position: absolute;
+  bottom: -3px;
+  right: 18px;
+  transform: rotate(30deg);
+}
+
+@media (max-width: 1366px) {
+  .allow {
+    font-size: 18px;
+  }
+
+  .allow::after {
+    height: 50px;
+  }
+
+  .allow::before {
+    height: 20px;
+    right: 19px;
+  }
+}
