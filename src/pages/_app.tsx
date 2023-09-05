@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <Layout>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <title>LeafField</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
