@@ -15,6 +15,9 @@ const Hero = () => {
         alt="森林と湖の画像"
         fill
         style={{ objectFit: "cover" }}
+        sizes="100vw"
+        priority
+        key={`森林と湖の画像`}
       />
       <HeroText />
       <Allow />

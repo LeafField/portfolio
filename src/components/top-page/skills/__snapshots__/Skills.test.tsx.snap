@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SKillsの結合テスト スナップショットテスト 1`] = `
+<div>
+  <section
+    class="space-y-[60px] bg-whiteColor px-[43px] pt-[180px]"
+  >
+    <h2
+      class="className text-center text-[32px]"
+    >
+      Skills
+    </h2>
+    <div
+      class="mx-auto flex max-w-7xl"
+    >
+      <figure
+        class="relative mt-[124px] hidden h-[388px] w-[640px] flex-1 overflow-hidden lg:block"
+      >
+        <img
+          alt="机の上のノート"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          sizes="50vw"
+          src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+        />
+      </figure>
+      <div
+        class="flex-1"
+      >
+        <div
+          class="relative z-10 mx-auto flex flex-wrap justify-center gap-4 bg-mainColor py-5 pl-5 pr-5 md:gap-12 lg:ml-[-144px] lg:max-w-[785px] lg:pl-[145px]"
+        >
+          <img
+            alt="HTML"
+            class="h-[50px] w-[35px] md:h-[100px] md:w-[70px] "
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="70"
+          />
+          <img
+            alt="CSS"
+            class="h-[50px] w-[35px] md:h-[100px] md:w-[70px] "
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="70"
+          />
+          <img
+            alt="JavaScript"
+            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="100"
+          />
+          <img
+            alt="TypeScript"
+            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="100"
+          />
+          <img
+            alt="React"
+            class="h-[50px] w-[56px] md:h-[100px] md:w-[112px] "
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="112"
+          />
+          <img
+            alt="Next.js"
+            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="100"
+          />
+          <img
+            alt="Tailwind CSS"
+            class="h-[45px] w-[75px] md:h-[90px] md:w-[150px] "
+            data-nimg="1"
+            decoding="async"
+            height="90"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="150"
+          />
+          <img
+            alt="Nest.js"
+            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="100"
+          />
+        </div>
+        <div
+          class="space-y-2 pt-4 lg:p-5"
+        >
+          <h3
+            class="text-xl md:text-2xl className"
+          >
+            フロントエンドの極みを目指して
+          </h3>
+          <p
+            class="text-sm md:text-base"
+          >
+            主にReactとNext.jsが得意ですが、フロントエンドを極める為にはフロントエンドだけに閉じこもらず 関係する分野に広く通じていた方がいいと考えサーバーサイド（主にNest.js）やインフラ周りの勉強を始めています。
+            <br />
+            将来的にはデザインも勉強し、デザイナーとデザインについて熱く語り合い、サーバーサイドエンジニアと深く連携ができるフロントエンドエンジニアを目指しています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

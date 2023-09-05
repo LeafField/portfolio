@@ -20,7 +20,9 @@ const Layout: FC<Props> = ({ children }) => {
         }`}
       >
         <Header />
-        <main className={`${noto.className} `}>{children}</main>
+        <main className={`${noto.className} bg-whiteColor pb-[180px]`}>
+          {children}
+        </main>
         <Footer />
       </div>
     </>
