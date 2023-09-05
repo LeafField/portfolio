@@ -17,6 +17,8 @@ const Skills = () => {
             fill
             style={{ objectFit: "cover" }}
             sizes="50vw"
+            blurDataURL={noteImage.blurDataURL}
+            placeholder="blur"
           />
         </figure>
         <div className="flex-1">

@@ -1,0 +1,1 @@
+{"apiFields":[{"idValue":"6LextBMbp1","fieldId":"title","name":"タイトル","kind":"text","required":true},{"fieldId":"description","name":"説明文","kind":"textArea","required":true,"textSizeLimitValidation":{"textSize":{"min":5,"max":40}}},{"fieldId":"content","name":"本文","kind":"richEditorV2"},{"fieldId":"image","name":"サムネイル画像","kind":"media"}],"customFields":[]}

@@ -1,7 +1,17 @@
-import Image from "next/image";
-import Layout from "../components/layout/Layout";
-import TopPage from "../components/top-page/TopPage";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
+
+import { client } from "../lib/client";
+
+import Hero from "../components/top-page/hero/Hero";
+import PortfolioSection from "../components/top-page/portfolio-section/PortfolioSection";
+import Skills from "../components/top-page/skills/Skills";
 
 export default function Home() {
-  return <TopPage />;
+  return (
+    <>
+      <Hero />
+      <Skills />
+      <PortfolioSection />
+    </>
+  );
 }
