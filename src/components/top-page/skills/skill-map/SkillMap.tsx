@@ -18,6 +18,7 @@ const SkillMap = () => {
         alt="HTML"
         width={70}
         height={100}
+        key={1}
       />
       <Image
         className="h-[50px] w-[35px] md:h-[100px] md:w-[70px] "
@@ -25,6 +26,7 @@ const SkillMap = () => {
         alt="CSS"
         width={70}
         height={100}
+        key={2}
       />
       <Image
         className="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
@@ -32,6 +34,7 @@ const SkillMap = () => {
         alt="JavaScript"
         width={100}
         height={100}
+        key={3}
       />
       <Image
         className="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
@@ -39,6 +42,7 @@ const SkillMap = () => {
         alt="TypeScript"
         width={100}
         height={100}
+        key={4}
       />
       <Image
         className="h-[50px] w-[56px] md:h-[100px] md:w-[112px] "
@@ -46,6 +50,7 @@ const SkillMap = () => {
         alt="React"
         width={112}
         height={100}
+        key={5}
       />
       <Image
         className="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
@@ -53,6 +58,7 @@ const SkillMap = () => {
         alt="Next.js"
         width={100}
         height={100}
+        key={6}
       />
       <Image
         className="h-[45px] w-[75px] md:h-[90px] md:w-[150px] "
@@ -60,6 +66,7 @@ const SkillMap = () => {
         alt="Tailwind CSS"
         width={150}
         height={90}
+        key={7}
       />
       <Image
         className="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
@@ -67,6 +74,7 @@ const SkillMap = () => {
         alt="Nest.js"
         width={100}
         height={100}
+        key={8}
       />
     </div>
   );

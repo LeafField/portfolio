@@ -8,7 +8,7 @@ const HeroText = () => {
         Welcome <br className=" sm:hidden" />
         to my portfolio!
       </h2>
-      <p className="text-base leading-[150%] lg:text-2xl">
+      <p className="text-justify text-base leading-[150%] lg:text-2xl">
         はじめまして！私のポートフォリオサイトをご覧いただき、ありがとうございます。
         <br />
         このサイトを通じて私自身のスキルや経験をお伝えし、興味を持っていただけると嬉しいです。

@@ -6,7 +6,6 @@ import HeroText from "./hero-text/HeroText";
 import Allow from "./allow/Allow";
 
 const Hero = () => {
-  console.log(Jpg.blurDataURL);
   return (
     <section
       className={`${styles.cover} relative flex h-[calc(100vh-96px)] items-start justify-center overflow-hidden px-4 pt-8 sm:items-center`}

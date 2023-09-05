@@ -15,7 +15,7 @@ exports[`HeroTextの単体テスト スナップショットテスト 1`] = `
       to my portfolio!
     </h2>
     <p
-      class="text-base leading-[150%] lg:text-2xl"
+      class="text-justify text-base leading-[150%] lg:text-2xl"
     >
       はじめまして！私のポートフォリオサイトをご覧いただき、ありがとうございます。
       <br />
