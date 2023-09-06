@@ -16,4 +16,11 @@ describe("Portfolioセクションの結合テスト", () => {
       }),
     ).toBeInTheDocument();
   });
+
+  it("セクションタイトルが正しく表示されているか", () => {
+    render(<PortfolioSection posts={multipleDummyData.contents} />);
+    expect(
+      screen.getByRole("heading", { name: "Portfolio" }),
+    ).toBeInTheDocument();
+  });
 });
