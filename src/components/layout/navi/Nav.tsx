@@ -17,7 +17,7 @@ const Nav = () => {
         Menu
       </h2>
       <ul
-        className={`${roboto.className} space-y-[58px] p-[58px] text-center text-4xl`}
+        className={`${roboto.className} space-y-6 p-7 text-center text-4xl sm:space-y-[58px] sm:p-[58px]`}
       >
         <li>
           <Link href={"/"}>TOP</Link>

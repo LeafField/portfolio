@@ -8,13 +8,13 @@ import Allow from "./allow/Allow";
 const Hero = () => {
   return (
     <section
-      className={`${styles.cover} relative flex h-[calc(100vh-96px)] items-start justify-center overflow-hidden px-4 pt-8 sm:items-center`}
+      className={`${styles.cover} relative flex h-[calc(100svh-96px)] items-start justify-center overflow-hidden px-4 pt-8 sm:items-center`}
     >
       <Image
         src={Jpg}
         alt="森林と湖の画像"
         fill
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", transition: "0.2s" }}
         sizes="100vw"
         priority
         key={`森林と湖の画像`}
