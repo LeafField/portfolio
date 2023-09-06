@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { robotoBold } from "../../lib/font";
+import { robotoBold } from "../../../lib/font";
 
 type Props = {
   title: string;

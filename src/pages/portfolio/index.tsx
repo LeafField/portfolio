@@ -1,7 +1,8 @@
 import React from "react";
+import PageTop from "../../components/atoms/page-top/PageTop";
 
 const PortfolioPage = () => {
-  return <div className=" h-96 bg-slate-500 pt-28">ポートフォリオページ</div>;
+  return <PageTop title="Portfolio" />;
 };
 
 export default PortfolioPage;

@@ -1,6 +1,6 @@
 import { screen, render } from "@testing-library/react";
 import PortfolioSection from "./PortfolioSection";
-import { multipleDummyData } from "./dummyData";
+import { multipleDummyData } from "../../../lib/dummyData";
 
 describe("Portfolioセクションの結合テスト", () => {
   it("複数のダミーデータに大してそれぞれ正しくレンダリングされているかどうか", () => {

@@ -1,4 +1,4 @@
-import { EndPoints } from "../../../../types/cms-types";
+import { EndPoints } from "../../types/cms-types";
 import testImage from "../../../../public/jess-bailey-q10VITrVYUM-unsplash.jpg";
 import testImage2 from "../../../../public/sun-binbin-Ddk5lE7tM7U-unsplash.jpg";
 

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import SectionTitle from "../../atoms/SectionTitle";
+import SectionTitle from "../../atoms/section-title/SectionTitle";
 import { EndPoints } from "../../../../types/cms-types";
 import Article from "./article/Article";
 
