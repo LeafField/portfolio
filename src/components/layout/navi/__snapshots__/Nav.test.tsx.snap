@@ -15,10 +15,11 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
       Menu
     </h2>
     <ul
-      class="className space-y-6 p-7 text-center text-4xl sm:space-y-[58px] sm:p-[58px]"
+      class="className flex flex-col items-center justify-center space-y-6 p-7 text-4xl sm:space-y-[58px] sm:p-[58px]"
     >
       <li>
         <a
+          class="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           href="/"
         >
           TOP
@@ -26,6 +27,7 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
       </li>
       <li>
         <a
+          class="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           href="/portfolio"
         >
           Portfolio
@@ -33,6 +35,7 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
       </li>
       <li>
         <a
+          class="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           href="/contact"
         >
           Contact
@@ -40,6 +43,7 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
       </li>
       <li>
         <a
+          class="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           href="https://github.com/LeafField"
           target="_blank"
         >
@@ -48,6 +52,7 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
       </li>
       <li>
         <a
+          class="relative block w-min after:mt-1 after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           href="https://twitter.com/youko8713"
           target="_blank"
         >

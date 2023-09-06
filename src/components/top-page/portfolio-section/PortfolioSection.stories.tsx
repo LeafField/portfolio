@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import PortfolioSection from "./PortfolioSection";
 import { noto } from "../../../lib/font";
-import { multipleDummyData } from "./dummyData";
+import { multipleDummyData } from "../../../lib/dummyData";
 
 const meta: Meta = {
   title: "top-page/portfolio",

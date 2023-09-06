@@ -17,24 +17,47 @@ const Nav = () => {
         Menu
       </h2>
       <ul
-        className={`${roboto.className} space-y-6 p-7 text-center text-4xl sm:space-y-[58px] sm:p-[58px]`}
+        className={`${roboto.className} flex flex-col items-center justify-center space-y-6 p-7 text-4xl sm:space-y-[58px] sm:p-[58px]`}
       >
         <li>
-          <Link href={"/"}>TOP</Link>
+          <Link
+            href={"/"}
+            className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
+          >
+            TOP
+          </Link>
         </li>
         <li>
-          <Link href={"/portfolio"}>Portfolio</Link>
+          <Link
+            className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
+            href={"/portfolio"}
+          >
+            Portfolio
+          </Link>
         </li>
         <li>
-          <Link href={"/contact"}>Contact</Link>
+          <Link
+            className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
+            href={"/contact"}
+          >
+            Contact
+          </Link>
         </li>
         <li>
-          <Link target="_blank" href={"https://github.com/LeafField"}>
+          <Link
+            className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
+            target="_blank"
+            href={"https://github.com/LeafField"}
+          >
             GitHub
           </Link>
         </li>
         <li>
-          <Link target="_blank" href={"https://twitter.com/youko8713"}>
+          <Link
+            className="relative block w-min after:mt-1 after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
+            target="_blank"
+            href={"https://twitter.com/youko8713"}
+          >
             {"X(Twitter)"}
           </Link>
         </li>

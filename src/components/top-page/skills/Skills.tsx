@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "../../atoms/SectionTitle";
+import SectionTitle from "../../atoms/section-title/SectionTitle";
 import SkillMap from "./skill-map/SkillMap";
 import Image from "next/image";
 import noteImage from "../../../../public/jess-bailey-q10VITrVYUM-unsplash.jpg";

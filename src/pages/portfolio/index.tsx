@@ -1,7 +1,34 @@
 import React from "react";
+import { InferGetStaticPropsType, NextPage } from "next";
+import { client } from "../../lib/client";
+import PageTop from "../../components/atoms/page-top/PageTop";
+import CardLine from "../../components/portfolio-page/CardLine";
+import { EndPoints } from "../../../types/cms-types";
+import { blurGenerator } from "../../lib/blurGenerator";
 
-const PortfolioPage = () => {
-  return <div className=" h-96 bg-slate-500 pt-28">ポートフォリオページ</div>;
+export const getStaticProps = async () => {
+  const res = await client.get<EndPoints["gets"]["portfolio"]>({
+    endpoint: "portfolio",
+  });
+  const posts = res.contents;
+  await blurGenerator(posts);
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};
+
+type Props = InferGetStaticPropsType<typeof getStaticProps>;
+
+const PortfolioPage: NextPage<Props> = ({ posts }) => {
+  return (
+    <>
+      <PageTop title="Portfolio" />
+      <CardLine posts={posts} />
+    </>
+  );
 };
 
 export default PortfolioPage;

@@ -2,24 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Article from "./Article";
 import { EndPoints } from "../../../../../types/cms-types";
 import testImage from "../../../../../public/jess-bailey-q10VITrVYUM-unsplash.jpg";
-
-const dummyData: EndPoints["get"]["portfolio"] = {
-  content: "",
-  createdAt: "",
-  description:
-    "figmaにてデザインから行いNext.jsで開発しました。訪れた人が癒されるようなコンセプトです。デザインから作る事でフロントエンドエンジニアとして、デザインへの理解を深めるいい機会になりました。",
-  id: "fsdfhjskjd",
-  image: {
-    height: testImage.height,
-    width: testImage.width,
-    url: `${testImage.src}`,
-    blurDataURL: "fdsafjhgas",
-  },
-  publishedAt: "",
-  revisedAt: "",
-  title: "このポートフォリオサイト",
-  updatedAt: "",
-};
+import { dummyData } from "../../../../lib/dummyData";
 
 const meta: Meta = {
   title: "portfolio/Article",
