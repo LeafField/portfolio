@@ -7,16 +7,21 @@ import { EndPoints } from "../../../types/cms-types";
 import { blurGenerator } from "../../lib/blurGenerator";
 
 export const getStaticProps = async () => {
-  const res = await client.get<EndPoints["gets"]["portfolio"]>({
-    endpoint: "portfolio",
-  });
-  const posts = await blurGenerator(res.contents);
+  try {
+    const res = await client.get<EndPoints["gets"]["portfolio"]>({
+      endpoint: "portfolio",
+    });
+    const posts = await blurGenerator(res.contents);
 
-  return {
-    props: {
-      posts,
-    },
-  };
+    return {
+      props: {
+        posts,
+      },
+    };
+  } catch (err: any) {
+    console.error(err.message);
+    console.log("portfolioページのエラー");
+  }
 };
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;

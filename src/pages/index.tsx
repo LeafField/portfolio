@@ -24,6 +24,7 @@ export const getStaticProps = async () => {
     };
   } catch (err: any) {
     console.error(err);
+    console.log("トップページのエラー");
     throw new Error(err.message);
   }
 };
