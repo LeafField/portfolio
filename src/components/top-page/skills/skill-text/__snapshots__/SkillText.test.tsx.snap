@@ -11,7 +11,7 @@ exports[`SkillTextの単体テスト スナップショットテスト 1`] = `
       フロントエンドの極みを目指して
     </h3>
     <p
-      class="text-sm md:text-base"
+      class="text-justify text-sm md:text-base"
     >
       主にReactとNext.jsが得意ですが、フロントエンドを極める為にはフロントエンドだけに閉じこもらず 関係する分野に広く通じていた方がいいと考えサーバーサイド（主にNest.js）やインフラ周りの勉強を始めています。
       <br />

@@ -20,6 +20,9 @@ const Nav = () => {
         className={`${roboto.className} space-y-[58px] p-[58px] text-center text-4xl`}
       >
         <li>
+          <Link href={"/"}>TOP</Link>
+        </li>
+        <li>
           <Link href={"/portfolio"}>Portfolio</Link>
         </li>
         <li>

@@ -30,7 +30,9 @@ const Humbarger = () => {
           humbarger && "translate-y-[-7px] rotate-[225deg]"
         }`}
       ></span>
-      <span className="absolute top-0 opacity-0">ハンバーガーメニュー</span>
+      <span className="absolute top-[-100px] opacity-0">
+        ハンバーガーメニュー
+      </span>
     </button>
   );
 };

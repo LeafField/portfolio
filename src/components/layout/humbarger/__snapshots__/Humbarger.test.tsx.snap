@@ -17,7 +17,7 @@ exports[`クリックイベントに対してaria-expandedが正しく反応し�
       class="mt-[6px] block h-[1px] w-6 bg-main-textColor transition-all duration-[500ms] translate-y-[-7px] rotate-[225deg]"
     />
     <span
-      class="absolute top-0 opacity-0"
+      class="absolute top-[-100px] opacity-0"
     >
       ハンバーガーメニュー
     </span>

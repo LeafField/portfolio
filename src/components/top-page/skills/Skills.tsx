@@ -7,9 +7,9 @@ import SkillText from "./skill-text/SkillText";
 
 const Skills = () => {
   return (
-    <section className="space-y-[60px] bg-whiteColor px-[43px] pt-[180px]">
+    <section className="space-y-[60px] bg-whiteColor px-4  pt-[180px]">
       <SectionTitle title="Skills" />
-      <div className="mx-auto flex max-w-7xl">
+      <div className="mx-auto flex max-w-7xl  ">
         <figure className="relative mt-[124px] hidden h-[388px] w-[640px] flex-1 overflow-hidden lg:block">
           <Image
             src={noteImage}
@@ -17,6 +17,8 @@ const Skills = () => {
             fill
             style={{ objectFit: "cover" }}
             sizes="50vw"
+            blurDataURL={noteImage.blurDataURL}
+            placeholder="blur"
           />
         </figure>
         <div className="flex-1">

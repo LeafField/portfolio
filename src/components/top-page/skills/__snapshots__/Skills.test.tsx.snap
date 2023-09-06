@@ -3,7 +3,7 @@
 exports[`SKillsの結合テスト スナップショットテスト 1`] = `
 <div>
   <section
-    class="space-y-[60px] bg-whiteColor px-[43px] pt-[180px]"
+    class="space-y-[60px] bg-whiteColor px-4  pt-[180px]"
   >
     <h2
       class="className text-center text-[32px]"
@@ -11,7 +11,7 @@ exports[`SKillsの結合テスト スナップショットテスト 1`] = `
       Skills
     </h2>
     <div
-      class="mx-auto flex max-w-7xl"
+      class="mx-auto flex max-w-7xl  "
     >
       <figure
         class="relative mt-[124px] hidden h-[388px] w-[640px] flex-1 overflow-hidden lg:block"
@@ -24,7 +24,7 @@ exports[`SKillsの結合テスト スナップショットテスト 1`] = `
           sizes="50vw"
           src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
           srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
         />
       </figure>
       <div
@@ -139,7 +139,7 @@ exports[`SKillsの結合テスト スナップショットテスト 1`] = `
             フロントエンドの極みを目指して
           </h3>
           <p
-            class="text-sm md:text-base"
+            class="text-justify text-sm md:text-base"
           >
             主にReactとNext.jsが得意ですが、フロントエンドを極める為にはフロントエンドだけに閉じこもらず 関係する分野に広く通じていた方がいいと考えサーバーサイド（主にNest.js）やインフラ周りの勉強を始めています。
             <br />

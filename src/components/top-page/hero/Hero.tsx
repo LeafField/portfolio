@@ -18,6 +18,8 @@ const Hero = () => {
         sizes="100vw"
         priority
         key={`森林と湖の画像`}
+        placeholder="blur"
+        blurDataURL={Jpg.blurDataURL}
       />
       <HeroText />
       <Allow />
