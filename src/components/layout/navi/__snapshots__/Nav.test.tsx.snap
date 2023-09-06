@@ -19,6 +19,13 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
     >
       <li>
         <a
+          href="/"
+        >
+          TOP
+        </a>
+      </li>
+      <li>
+        <a
           href="/portfolio"
         >
           Portfolio

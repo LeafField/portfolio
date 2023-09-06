@@ -3,7 +3,7 @@
 exports[`SKillsの結合テスト スナップショットテスト 1`] = `
 <div>
   <section
-    class="space-y-[60px] bg-whiteColor px-[43px] pt-[180px]"
+    class="space-y-[60px] bg-whiteColor px-4  pt-[180px]"
   >
     <h2
       class="className text-center text-[32px]"
@@ -11,7 +11,7 @@ exports[`SKillsの結合テスト スナップショットテスト 1`] = `
       Skills
     </h2>
     <div
-      class="mx-auto flex max-w-7xl"
+      class="mx-auto flex max-w-7xl  "
     >
       <figure
         class="relative mt-[124px] hidden h-[388px] w-[640px] flex-1 overflow-hidden lg:block"

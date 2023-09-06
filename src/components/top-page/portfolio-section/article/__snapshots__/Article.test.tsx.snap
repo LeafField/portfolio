@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Articleの単体テスト スナップショットテスト 1`] = `
+<div>
+  <div
+    class="grid max-w-[1280px] grid-cols-3 gap-4 pt-4 "
+  >
+    <div
+      class="col-start-2"
+    >
+      <article
+        class="transition-shadow duration-300 hover:shadow-lg"
+      >
+        <a
+          href="/portfolio/fsdfhjskjd"
+        >
+          <figure
+            class="h-[229px] w-full overflow-hidden"
+          >
+            <img
+              alt="サムネイル画像"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent; max-width: 100%; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+              width="40"
+            />
+          </figure>
+          <h3
+            class="className relative z-10 mt-[-49px] flex h-[50px] w-full justify-center text-lg min-[420px]:text-2xl "
+          >
+            <span
+              class="flex h-full w-fit items-center justify-center bg-whiteColor px-8"
+            >
+              このポートフォリオサイト
+            </span>
+          </h3>
+          <p
+            class=" p-2 text-justify"
+          >
+            figmaにてデザインから行いNext.jsで開発しました。訪れた人が癒されるようなコンセプトです。デザインから作る事でフロントエンドエンジニアとして、デザインへの理解を深めるいい機会になりました。
+          </p>
+        </a>
+      </article>
+    </div>
+  </div>
+</div>
+`;

@@ -12,7 +12,7 @@ const Article: FC<Props> = ({ post }) => {
   return (
     <article
       key={post.id}
-      className="transition-shadow duration-300 hover:shadow-lg sm:w-[416px]"
+      className="transition-shadow duration-300 hover:shadow-lg"
     >
       <Link href={`/portfolio/${post.id}`}>
         <figure className="h-[229px] w-full overflow-hidden">
@@ -22,12 +22,14 @@ const Article: FC<Props> = ({ post }) => {
             width={post.image.width}
             height={post.image.height}
             style={{ maxWidth: "100%", height: "auto" }}
+            placeholder="blur"
+            blurDataURL={post.image.blurDataURL}
           />
         </figure>
         <h3
-          className={`${notoBold.className} relative z-10 mt-[-50px] h-[50px] w-full px-7 text-2xl `}
+          className={`${notoBold.className} relative z-10 mt-[-49px] flex h-[50px] w-full justify-center text-lg min-[420px]:text-2xl `}
         >
-          <span className="flex h-full items-center justify-center bg-whiteColor">
+          <span className="flex h-full w-fit items-center justify-center bg-whiteColor px-8">
             {post.title}
           </span>
         </h3>

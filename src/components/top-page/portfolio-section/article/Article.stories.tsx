@@ -13,6 +13,7 @@ const dummyData: EndPoints["get"]["portfolio"] = {
     height: testImage.height,
     width: testImage.width,
     url: `${testImage.src}`,
+    blurDataURL: "fdsafjhgas",
   },
   publishedAt: "",
   revisedAt: "",
@@ -50,10 +51,13 @@ export const AritcleThreeStory: Story = {
   },
   decorators: [
     (StoryComponent) => (
-      <div className="mx-auto grid max-w-[1280px] grid-cols-3  gap-4 pt-4">
-        <StoryComponent />
-        <StoryComponent />
-        <StoryComponent />
+      <div className="px-4">
+        <div className="mx-auto grid max-w-[1280px] gap-y-8 pt-4 sm:grid-cols-[repeat(auto-fill,minmax(360px,1fr))] sm:gap-x-4 ">
+          <StoryComponent />
+          <StoryComponent />
+          <StoryComponent />
+          <StoryComponent />
+        </div>
       </div>
     ),
   ],
