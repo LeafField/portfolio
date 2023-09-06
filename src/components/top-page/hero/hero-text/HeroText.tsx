@@ -4,7 +4,7 @@ import { pacifico } from "../../../../lib/font";
 const HeroText = () => {
   return (
     <div className="relative z-20 max-w-[824px] space-y-4 border border-white p-4 text-white sm:p-6 lg:space-y-[56px]">
-      <h2 className={`${pacifico.className} text-center text-xl sm:text-5xl`}>
+      <h2 className={`${pacifico.className} text-center text-2xl sm:text-5xl`}>
         Welcome to my portfolio!
       </h2>
       <p className="text-justify text-base leading-[150%] lg:text-2xl">

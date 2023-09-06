@@ -15,8 +15,7 @@ export const getStaticProps = async () => {
     const res = await client.get<EndPoints["gets"]["portfolio"]>({
       endpoint: "portfolio",
     });
-    const posts = res.contents;
-    await blurGenerator(posts);
+    const posts = await blurGenerator(res.contents);
 
     return {
       props: {
