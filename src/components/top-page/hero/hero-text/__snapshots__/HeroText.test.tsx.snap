@@ -6,7 +6,7 @@ exports[`HeroTextの単体テスト スナップショットテスト 1`] = `
     class="relative z-20 max-w-[824px] space-y-4 border border-white p-4 text-white sm:p-6 lg:space-y-[56px]"
   >
     <h2
-      class="className text-center text-xl sm:text-5xl"
+      class="className text-center text-2xl sm:text-5xl"
     >
       Welcome to my portfolio!
     </h2>
@@ -15,7 +15,7 @@ exports[`HeroTextの単体テスト スナップショットテスト 1`] = `
     >
       はじめまして！私のポートフォリオサイトをご覧いただき、ありがとうございます。
       <br />
-      このサイトを通じて私自身のスキルや経験をお伝えし、興味を持っていただけると嬉しいです。
+      このサイトを通じて私自身のスキルや経験を知っていただき、興味を持っていただけると嬉しいです。
       <br />
       私はWebサイトやWebアプリの制作が大好きで、常に新しい技術やトレンドに興味を持ち、積極的に学び続けています。
       <br />
