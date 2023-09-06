@@ -8,7 +8,7 @@ import Allow from "./allow/Allow";
 const Hero = () => {
   return (
     <section
-      className={`${styles.cover} relative flex h-[calc(100svh-96px)] items-start justify-center overflow-hidden px-4 pt-8 sm:items-center`}
+      className={`${styles.cover} relative flex h-[calc(100svh-96px)] flex-col items-center justify-start overflow-hidden px-4 pt-8 sm:justify-center`}
     >
       <Image
         src={Jpg}

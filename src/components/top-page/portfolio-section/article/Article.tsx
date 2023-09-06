@@ -12,16 +12,16 @@ const Article: FC<Props> = ({ post }) => {
   return (
     <article
       key={post.id}
-      className="transition-shadow duration-300 hover:shadow-lg"
+      className="transition-shadow duration-300 hover:shadow-lg  "
     >
       <Link href={`/portfolio/${post.id}`}>
-        <figure className="h-[229px] w-full overflow-hidden">
+        <figure className="aspect-video w-full overflow-hidden md:max-h-[229px]  ">
           <Image
             src={post.image.url}
             alt="サムネイル画像"
             width={post.image.width}
             height={post.image.height}
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{ maxWidth: "100%", height: "100%" }}
             placeholder="blur"
             blurDataURL={post.image.blurDataURL}
           />

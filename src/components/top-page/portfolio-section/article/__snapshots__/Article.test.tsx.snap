@@ -9,13 +9,13 @@ exports[`Articleの単体テスト スナップショットテスト 1`] = `
       class="col-start-2"
     >
       <article
-        class="transition-shadow duration-300 hover:shadow-lg"
+        class="transition-shadow duration-300 hover:shadow-lg  "
       >
         <a
           href="/portfolio/fsdfhjskjd"
         >
           <figure
-            class="h-[229px] w-full overflow-hidden"
+            class="aspect-video w-full overflow-hidden md:max-h-[229px]  "
           >
             <img
               alt="サムネイル画像"
@@ -25,7 +25,7 @@ exports[`Articleの単体テスト スナップショットテスト 1`] = `
               loading="lazy"
               src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
               srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-              style="color: transparent; max-width: 100%; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+              style="color: transparent; max-width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               width="40"
             />
           </figure>

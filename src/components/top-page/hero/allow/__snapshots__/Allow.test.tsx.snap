@@ -3,7 +3,7 @@
 exports[`Allowの単体テスト スナップショットテスト 1`] = `
 <div>
   <div
-    class="absolute bottom-0 z-20 "
+    class="bottom-0 z-20 sm:absolute sm:left-8 "
   >
     <div
       class="allow"
