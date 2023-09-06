@@ -12,7 +12,7 @@ const Article: FC<Props> = ({ post }) => {
   return (
     <article
       key={post.id}
-      className="transition-shadow duration-300 hover:shadow-lg  "
+      className="transition duration-300 hover:translate-x-[-1px] hover:translate-y-[-2px] hover:shadow-lg "
     >
       <Link href={`/portfolio/${post.id}`}>
         <figure className="aspect-video w-full overflow-hidden md:max-h-[229px]  ">

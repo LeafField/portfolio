@@ -8,6 +8,7 @@ import PortfolioSection from "../components/top-page/portfolio-section/Portfolio
 import Skills from "../components/top-page/skills/Skills";
 
 import { EndPoints } from "../../types/cms-types";
+import { blurGenerator } from "../lib/blurGenerator";
 
 export const getStaticProps = async () => {
   try {
@@ -15,15 +16,7 @@ export const getStaticProps = async () => {
       endpoint: "portfolio",
     });
     const posts = res.contents;
-    await Promise.all(
-      posts.map(async (post) => {
-        const buffer = await fetch(post.image.url).then(async (res) =>
-          Buffer.from(await res.arrayBuffer()),
-        );
-        const { base64 } = await getPlaiceholder(buffer);
-        post.image.blurDataURL = base64;
-      }),
-    );
+    await blurGenerator(posts);
 
     return {
       props: {

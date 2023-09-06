@@ -1,6 +1,6 @@
 import { EndPoints } from "../../types/cms-types";
-import testImage from "../../../../public/jess-bailey-q10VITrVYUM-unsplash.jpg";
-import testImage2 from "../../../../public/sun-binbin-Ddk5lE7tM7U-unsplash.jpg";
+import testImage from "../../public/jess-bailey-q10VITrVYUM-unsplash.jpg";
+import testImage2 from "../../public/sun-binbin-Ddk5lE7tM7U-unsplash.jpg";
 
 export const multipleDummyData: EndPoints["gets"]["portfolio"] = {
   limit: 10,
@@ -40,4 +40,22 @@ export const multipleDummyData: EndPoints["gets"]["portfolio"] = {
       updatedAt: "",
     },
   ],
+};
+
+export const dummyData: EndPoints["get"]["portfolio"] = {
+  content: "",
+  createdAt: "",
+  description:
+    "figmaにてデザインから行いNext.jsで開発しました。訪れた人が癒されるようなコンセプトです。デザインから作る事でフロントエンドエンジニアとして、デザインへの理解を深めるいい機会になりました。",
+  id: "fsdfhjskjd",
+  image: {
+    height: testImage.height,
+    width: testImage.width,
+    url: `${testImage.src}`,
+    blurDataURL: "fdsafjhgas",
+  },
+  publishedAt: "",
+  revisedAt: "",
+  title: "このポートフォリオサイト",
+  updatedAt: "",
 };
