@@ -41,6 +41,9 @@ export type portfolio<T = "get"> = Structure<
       height: number;
       blurDataURL?: string | undefined;
     };
+
+    siteurl: string;
+    github: string;
   }
 >;
 
