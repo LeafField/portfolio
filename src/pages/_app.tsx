@@ -14,21 +14,13 @@ export default function App({ Component, pageProps }: AppProps) {
     humbargerToggle(false);
   }, [humbargerToggle]);
 
-  const viewPortSettings = useCallback(() => {
-    const ViewPort = document.body.offsetWidth;
-    document.documentElement.style.setProperty("--vw", `${ViewPort / 100}px`);
-  }, []);
-
   useEffect(() => {
-    viewPortSettings();
     router.events.on("routeChangeStart", routerStart);
-    window.addEventListener("resize", viewPortSettings);
 
     return () => {
       router.events.off("routeChangeStart", routerStart);
-      window.removeEventListener("resize", viewPortSettings);
     };
-  }, [router.events, routerStart, viewPortSettings]);
+  }, [router.events, routerStart]);
   return (
     <Layout>
       <Head>

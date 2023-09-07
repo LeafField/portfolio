@@ -1,4 +1,10 @@
-import React, { FC } from "react";
+import React, {
+  FC,
+  useCallback,
+  useLayoutEffect,
+  useRef,
+  useEffect,
+} from "react";
 import Link from "next/link";
 import { EndPoints } from "../../../../types/cms-types";
 import Image from "next/image";
@@ -11,6 +17,22 @@ type Props = {
 };
 
 const ContentParser: FC<Props> = ({ post }) => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const viewPortCalc = useCallback(() => {
+    const vw = document.body.offsetWidth / 100;
+    ref.current?.style.setProperty("--vw", `${vw}px`);
+  }, [ref]);
+
+  useEffect(() => {
+    viewPortCalc();
+    window.addEventListener("resize", viewPortCalc);
+
+    return () => {
+      window.removeEventListener("resize", viewPortCalc);
+    };
+  }, [viewPortCalc]);
+
   return (
     <article className="mx-auto max-w-[816px] px-4 pt-[80px] ">
       <figure className="relative mr-auto aspect-video w-[90%] overflow-hidden ">
@@ -25,7 +47,10 @@ const ContentParser: FC<Props> = ({ post }) => {
           priority
         />
       </figure>
-      <div className="animate-leftSlide relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit border border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm transition duration-300 hover:translate-y-1 hover:shadow-none">
+      <div
+        ref={ref}
+        className="relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit animate-leftSlide border border-r-0 border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm transition duration-300 hover:translate-y-1 hover:shadow-none"
+      >
         <h2 className=" text-xl text-main-textColor sm:text-3xl">
           {post.title}
         </h2>
