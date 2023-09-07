@@ -25,11 +25,7 @@ const ContentParser: FC<Props> = ({ post }) => {
           priority
         />
       </figure>
-      <div
-        className="animate-leftSlide relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit
-      border border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md
-      backdrop-blur-sm transition duration-300 hover:translate-y-1 hover:shadow-none"
-      >
+      <div className="animate-leftSlide relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit border border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm transition duration-300 hover:translate-y-1 hover:shadow-none">
         <h2 className=" text-xl text-main-textColor sm:text-3xl">
           {post.title}
         </h2>
