@@ -1,0 +1,29 @@
+.content {
+  max-width: 800px;
+  margin-inline: auto;
+  line-height: 1.5;
+}
+
+.content > * {
+  padding: revert;
+  margin: revert;
+}
+
+.content ul {
+  list-style: disc;
+}
+
+.content h3 {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.content p {
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.content p + p {
+  margin-top: 4px;
+}

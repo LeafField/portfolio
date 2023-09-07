@@ -20,7 +20,9 @@ const Layout: FC<Props> = ({ children }) => {
         }`}
       >
         <Header />
-        <main className={`${noto.className} bg-whiteColor pb-[180px]`}>
+        <main
+          className={`${noto.className} overflow-x-hidden bg-whiteColor pb-[180px]`}
+        >
           {children}
         </main>
         <Footer />

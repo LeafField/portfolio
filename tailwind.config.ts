@@ -13,6 +13,15 @@ const config: Config = {
         mainColor: "#B6B6B6",
         whiteColor: "#FDFDFD",
       },
+      keyframes: {
+        leftSlide: {
+          "0%": { transform: "translateX(100vw)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        leftSlide: "leftSlide 1s ease-in-out",
+      },
     },
   },
 
