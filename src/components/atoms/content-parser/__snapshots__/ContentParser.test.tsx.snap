@@ -21,8 +21,8 @@ exports[`ContentParserの単体テスト スナップショットテスト 1`] =
       />
     </figure>
     <div
-      class="relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit animate-leftSlide border border-r-0 border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm transition duration-300 hover:translate-y-1 hover:shadow-none"
-      style="--vw: 0px;"
+      class="relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit border border-r-0 border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm "
+      style="transform: translateX(100%) translateZ(0); --vw: 0px;"
     >
       <h2
         class=" text-xl text-main-textColor sm:text-3xl"

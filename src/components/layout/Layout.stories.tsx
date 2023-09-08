@@ -11,6 +11,13 @@ const meta: Meta = {
       </div>
     ),
   ],
+  parameters: {
+    nextjs: {
+      router: {
+        basepath: "/",
+      },
+    },
+  },
 };
 
 export default meta;

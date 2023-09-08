@@ -15,7 +15,7 @@ const Blackout = () => {
         humbarger
           ? "pointer-events-auto opacity-100"
           : "pointer-events-none opacity-0"
-      }  absolute inset-0 z-40 bg-whiteColor/60  transition-all duration-300`}
+      }  absolute inset-0 z-40 cursor-pointer bg-whiteColor/60 transition-all duration-300`}
       aria-hidden="true"
       data-testid="whiteout"
     />

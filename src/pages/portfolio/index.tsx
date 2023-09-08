@@ -5,6 +5,7 @@ import PageTop from "../../components/atoms/page-top/PageTop";
 import CardLine from "../../components/portfolio-page/CardLine";
 import { EndPoints } from "../../../types/cms-types";
 import { blurGenerator } from "../../lib/blurGenerator";
+import { motion } from "framer-motion";
 
 export const getStaticProps = async () => {
   try {
@@ -28,10 +29,14 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const PortfolioPage: NextPage<Props> = ({ posts }) => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+    >
       <PageTop title="Portfolio" />
       <CardLine posts={posts} />
-    </>
+    </motion.div>
   );
 };
 
