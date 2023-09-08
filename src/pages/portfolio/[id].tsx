@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  InferGetStaticPropsType,
-  GetStaticPropsContext,
-  GetStaticPaths,
-  NextPage,
-} from "next/types";
+import { InferGetStaticPropsType, GetStaticPaths, NextPage } from "next/types";
 import { client } from "../../lib/client";
 import { EndPoints } from "../../../types/cms-types";
 import ContentParser from "../../components/atoms/content-parser/ContentParser";
@@ -35,20 +30,25 @@ type Params = {
 };
 
 export const getStaticProps = async ({ params }: Params) => {
-  const post = await client.get<EndPoints["get"]["portfolio"]>({
-    endpoint: "portfolio",
-    contentId: params!.id,
-  });
-  const buffer = await fetch(post.image.url).then(async (res) =>
-    Buffer.from(await res.arrayBuffer()),
-  );
-  const { base64 } = await getPlaiceholder(buffer);
-  post.image.blurDataURL = base64;
-  return {
-    props: {
-      post,
-    },
-  };
+  try {
+    const post = await client.get<EndPoints["get"]["portfolio"]>({
+      endpoint: "portfolio",
+      contentId: params!.id,
+    });
+    const buffer = await fetch(post.image.url).then(async (res) =>
+      Buffer.from(await res.arrayBuffer()),
+    );
+    const { base64 } = await getPlaiceholder(buffer);
+    post.image.blurDataURL = base64;
+    return {
+      props: {
+        post,
+      },
+    };
+  } catch (err: any) {
+    console.log("ポートフォリオ個別ページのgetStaticPropsのエラー");
+    throw new Error(err);
+  }
 };
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;

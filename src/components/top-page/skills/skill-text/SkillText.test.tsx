@@ -5,7 +5,7 @@ describe("SkillTextの単体テスト", () => {
   it("タイトルが正しく表示されているか", () => {
     render(<SkillText />);
     expect(screen.getByRole("heading")).toHaveTextContent(
-      "フロントエンドの極みを目指して",
+      "フロントエンドの高みを目指して",
     );
   });
 

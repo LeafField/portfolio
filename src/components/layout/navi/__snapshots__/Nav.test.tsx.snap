@@ -17,7 +17,9 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
     <ul
       class="className flex flex-col items-center justify-center space-y-6 p-7 text-4xl sm:space-y-[58px] sm:p-[58px]"
     >
-      <li>
+      <li
+        data-testid="navigation-list"
+      >
         <a
           class="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           href="/"

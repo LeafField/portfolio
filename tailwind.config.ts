@@ -13,6 +13,10 @@ const config: Config = {
         mainColor: "#B6B6B6",
         whiteColor: "#FDFDFD",
       },
+      boxShadow: {
+        right:
+          "8px 0 6px -1px rgb(0 0 0 / 0.1), 4px 0 4px -2px rgb(0 0 0 / 0.1)",
+      },
       keyframes: {
         leftSlide: {
           "0%": { transform: "translateX(100vw)" },
