@@ -4,6 +4,7 @@ import { client } from "../../lib/client";
 import { EndPoints } from "../../../types/cms-types";
 import ContentParser from "../../components/atoms/content-parser/ContentParser";
 import { getPlaiceholder } from "plaiceholder";
+import { motion } from "framer-motion";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   try {
@@ -54,7 +55,15 @@ export const getStaticProps = async ({ params }: Params) => {
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const ContentPage: NextPage<Props> = ({ post }) => {
-  return <ContentParser post={post} />;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+    >
+      <ContentParser post={post} />
+    </motion.div>
+  );
 };
 
 export default ContentPage;

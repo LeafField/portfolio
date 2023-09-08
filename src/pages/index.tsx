@@ -10,6 +10,8 @@ import Skills from "../components/top-page/skills/Skills";
 import { EndPoints } from "../../types/cms-types";
 import { blurGenerator } from "../lib/blurGenerator";
 
+import { motion } from "framer-motion";
+
 export const getStaticProps = async () => {
   try {
     const res = await client.get<EndPoints["gets"]["portfolio"]>({
@@ -33,11 +35,15 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const Home: NextPage<Props> = ({ posts }) => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
       <Hero />
       <Skills />
       <PortfolioSection posts={posts} />
-    </>
+    </motion.div>
   );
 };
 

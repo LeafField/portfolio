@@ -1,16 +1,11 @@
-import React, {
-  FC,
-  useCallback,
-  useLayoutEffect,
-  useRef,
-  useEffect,
-} from "react";
+import React, { FC, useCallback, useRef, useEffect } from "react";
 import Link from "next/link";
 import { EndPoints } from "../../../../types/cms-types";
 import Image from "next/image";
 import parse from "html-react-parser";
 import styles from "./ContentParser.module.css";
 import uTurnImage from "../../../../public/uturn.svg";
+import { motion } from "framer-motion";
 
 type Props = {
   post: EndPoints["get"]["portfolio"];
@@ -47,9 +42,12 @@ const ContentParser: FC<Props> = ({ post }) => {
           priority
         />
       </figure>
-      <div
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        transition={{ x: { duration: 0.6 }, ease: "easeInOut" }}
         ref={ref}
-        className="relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit animate-leftSlide border border-r-0 border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm transition duration-300 hover:translate-y-1 hover:shadow-none"
+        className="relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit border border-r-0 border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm "
       >
         <h2 className=" text-xl text-main-textColor sm:text-3xl">
           {post.title}
@@ -70,7 +68,7 @@ const ContentParser: FC<Props> = ({ post }) => {
             GitHub
           </Link>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.content}>{parse(post.content)}</div>
 
       <Link href={"/portfolio"} className="mt-8 flex gap-2">

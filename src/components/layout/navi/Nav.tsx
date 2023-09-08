@@ -4,11 +4,7 @@ import { pacifico, roboto } from "../../../lib/font";
 import useStore from "../../../store";
 
 const Nav = () => {
-  const { humbarger, humbargerToggle } = useStore();
-
-  const humbargerClose = () => {
-    humbargerToggle(false);
-  };
+  const { humbarger } = useStore();
 
   return (
     <nav
@@ -24,7 +20,7 @@ const Nav = () => {
       <ul
         className={`${roboto.className} flex flex-col items-center justify-center space-y-6 p-7 text-4xl sm:space-y-[58px] sm:p-[58px]`}
       >
-        <li data-testid="navigation-list" onClick={humbargerClose}>
+        <li data-testid="navigation-list">
           <Link
             href={"/"}
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
@@ -32,7 +28,7 @@ const Nav = () => {
             TOP
           </Link>
         </li>
-        <li onClick={humbargerClose}>
+        <li>
           <Link
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             href={"/portfolio"}
@@ -40,7 +36,7 @@ const Nav = () => {
             Portfolio
           </Link>
         </li>
-        <li onClick={humbargerClose}>
+        <li>
           <Link
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             href={"/contact"}
@@ -48,7 +44,7 @@ const Nav = () => {
             Contact
           </Link>
         </li>
-        <li onClick={humbargerClose}>
+        <li>
           <Link
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             target="_blank"
@@ -57,7 +53,7 @@ const Nav = () => {
             GitHub
           </Link>
         </li>
-        <li onClick={humbargerClose}>
+        <li>
           <Link
             className="relative block w-min after:mt-1 after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             target="_blank"
