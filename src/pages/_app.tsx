@@ -2,9 +2,22 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/layout/Layout";
 import Head from "next/head";
-import { AnimatePresence } from "framer-motion";
+import { useCallback, useEffect } from "react";
+import useStore from "../store";
 
 export default function App({ Component, pageProps, router }: AppProps) {
+  const { humbargerToggle } = useStore();
+  const humbargerClose = useCallback(() => {
+    humbargerToggle(false);
+  }, [humbargerToggle]);
+
+  useEffect(() => {
+    router.events.on("beforeHistoryChange", humbargerClose);
+
+    return () => {
+      router.events.off("beforeHistoryChange", humbargerClose);
+    };
+  }, [router.events, humbargerClose]);
   return (
     <Layout>
       <Head>

@@ -2,8 +2,6 @@ import { screen, render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Layout from "./Layout";
 
-jest.mock("next/router", () => jest.requireActual("next-router-mock"));
-
 describe("Layoutの結合テスト", () => {
   it("ハンバーガーボタン非クリック時、ハンバーガーボタンのaria-expandedがfalseかつnavのaria-hiddenがtrue", () => {
     render(

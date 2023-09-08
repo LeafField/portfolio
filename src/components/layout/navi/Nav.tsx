@@ -1,24 +1,10 @@
-import React, { useCallback, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import { pacifico, roboto } from "../../../lib/font";
 import useStore from "../../../store";
-import { useRouter } from "next/router";
 
 const Nav = () => {
-  const { humbarger, humbargerToggle } = useStore();
-  const router = useRouter();
-
-  const humbargerClose = useCallback(() => {
-    humbargerToggle(false);
-  }, [humbargerToggle]);
-
-  useEffect(() => {
-    router.events.on("beforeHistoryChange", humbargerClose);
-
-    return () => {
-      router.events.off("beforeHistoryChange", humbargerClose);
-    };
-  }, [router.events, humbargerClose]);
+  const { humbarger } = useStore();
 
   return (
     <nav
