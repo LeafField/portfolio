@@ -1,9 +1,10 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, ReactNode, useEffect } from "react";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import useStore from "../../store";
 import Nav from "./navi/Nav";
 import { noto } from "../../lib/font";
+import Blackout from "../atoms/blackout/Blackout";
 
 type Props = {
   children: ReactNode;
@@ -11,6 +12,15 @@ type Props = {
 
 const Layout: FC<Props> = ({ children }) => {
   const { humbarger } = useStore();
+
+  useEffect(() => {
+    if (humbarger) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.removeAttribute("style");
+    }
+  }, [humbarger]);
+
   return (
     <>
       <Nav />
@@ -21,8 +31,9 @@ const Layout: FC<Props> = ({ children }) => {
       >
         <Header />
         <main
-          className={`${noto.className} overflow-x-hidden bg-whiteColor pb-[180px]`}
+          className={`${noto.className} relative overflow-x-hidden bg-whiteColor pb-[180px]`}
         >
+          <Blackout />
           {children}
         </main>
         <Footer />
