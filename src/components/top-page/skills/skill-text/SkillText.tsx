@@ -5,7 +5,7 @@ const SkillText = () => {
   return (
     <div className="space-y-2 pt-4 lg:p-5">
       <h3 className={`text-xl md:text-2xl ${notoBold.className}`}>
-        フロントエンドの極みを目指して
+        フロントエンドの高みを目指して
       </h3>
       <p className="text-justify text-sm md:text-base">
         主にReactとNext.jsが得意ですが、フロントエンドを極める為にはフロントエンドだけに閉じこもらず
