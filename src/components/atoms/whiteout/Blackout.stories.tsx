@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Blackout from "./Blackout";
+import Whiteout from "./Whiteout";
 
 const meta = {
-  title: "atoms/Blackout",
-  component: Blackout,
-} satisfies Meta<typeof Blackout>;
+  title: "atoms/Whiteout",
+  component: Whiteout,
+} satisfies Meta<typeof Whiteout>;
 
 export default meta;
 

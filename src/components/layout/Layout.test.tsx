@@ -63,7 +63,7 @@ describe("Layoutの結合テスト", () => {
       </Layout>,
     );
 
-    const blackoutComponent = screen.getByTestId("blackout");
+    const blackoutComponent = screen.getByTestId("whiteout");
     const humbarger = screen.getByRole("button");
 
     await userEvent.click(humbarger);
