@@ -24,6 +24,7 @@ const Nav = () => {
       >
         <li data-testid="navigation-list">
           <Link
+            scroll={false}
             href={"/"}
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           >
@@ -32,6 +33,7 @@ const Nav = () => {
         </li>
         <li>
           <Link
+            scroll={false}
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             href={"/portfolio"}
           >
@@ -40,6 +42,7 @@ const Nav = () => {
         </li>
         <li>
           <Link
+            scroll={false}
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             href={"/contact"}
           >
@@ -48,6 +51,7 @@ const Nav = () => {
         </li>
         <li>
           <Link
+            scroll={false}
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             target="_blank"
             href={"https://github.com/LeafField"}
@@ -57,6 +61,7 @@ const Nav = () => {
         </li>
         <li>
           <Link
+            scroll={false}
             className="relative block w-min after:mt-1 after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
             target="_blank"
             href={"https://twitter.com/youko8713"}

@@ -15,6 +15,7 @@ const Header = () => {
               humbarger && "pointer-events-none cursor-default"
             } text-[2rem]`}
             href={`/`}
+            scroll={false}
           >
             LeafField
           </Link>

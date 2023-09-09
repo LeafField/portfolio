@@ -71,7 +71,7 @@ const ContentParser: FC<Props> = ({ post }) => {
       </motion.div>
       <div className={styles.content}>{parse(post.content)}</div>
 
-      <Link href={"/portfolio"} className="mt-8 flex gap-2">
+      <Link scroll={false} href={"/portfolio"} className="mt-8 flex gap-2">
         <Image
           className="block"
           src={uTurnImage}

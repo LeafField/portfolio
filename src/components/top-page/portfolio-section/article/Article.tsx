@@ -14,7 +14,7 @@ const Article: FC<Props> = ({ post }) => {
       key={post.id}
       className="transition duration-300 hover:translate-x-[-1px] hover:translate-y-[-2px] hover:shadow-lg "
     >
-      <Link href={`/portfolio/${post.id}`}>
+      <Link href={`/portfolio/${post.id}`} scroll={false}>
         <figure className="aspect-video w-full overflow-hidden md:max-h-[229px]  ">
           <Image
             src={post.image.url}

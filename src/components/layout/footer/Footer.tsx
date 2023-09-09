@@ -9,24 +9,40 @@ const Footer = () => {
     >
       <div className="flex flex-col gap-y-[50px] text-center">
         <h2>
-          <Link className={`${pacifico.className} text-[2rem]`} href={"/"}>
+          <Link
+            scroll={false}
+            className={`${pacifico.className} text-[2rem]`}
+            href={"/"}
+          >
             LeafField
           </Link>
         </h2>
         <ul className="flex flex-col gap-7 text-2xl sm:flex-row sm:gap-16">
           <li>
-            <Link href={"/portfolio"}>Portfolio</Link>
+            <Link scroll={false} href={"/portfolio"}>
+              Portfolio
+            </Link>
           </li>
           <li>
-            <Link href={"/contact"}>Contact</Link>
+            <Link scroll={false} href={"/contact"}>
+              Contact
+            </Link>
           </li>
           <li>
-            <Link target="_blank" href={"https://github.com/LeafField"}>
+            <Link
+              scroll={false}
+              target="_blank"
+              href={"https://github.com/LeafField"}
+            >
               GitHub
             </Link>
           </li>
           <li>
-            <Link target="_blank" href={"https://twitter.com/youko8713"}>
+            <Link
+              scroll={false}
+              target="_blank"
+              href={"https://twitter.com/youko8713"}
+            >
               {"X(Twitter)"}
             </Link>
           </li>
