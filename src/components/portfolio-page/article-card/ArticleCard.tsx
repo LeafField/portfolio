@@ -11,7 +11,7 @@ type Props = {
 
 const ArticleCard: FC<Props> = ({ post, reverse }) => {
   return (
-    <Link className="block" href={`portfolio/${post.id}`}>
+    <Link className="block" href={`portfolio/${post.id}`} scroll={false}>
       <article
         className={`${
           reverse && "flex-row-reverse"

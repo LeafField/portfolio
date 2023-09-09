@@ -32,6 +32,7 @@ const PortfolioPage: NextPage<Props> = ({ posts }) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
       <PageTop title="Portfolio" />
