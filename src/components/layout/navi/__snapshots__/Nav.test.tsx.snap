@@ -4,7 +4,7 @@ exports[`Navの単体テスト スナップショットテスト 1`] = `
 <div>
   <nav
     aria-hidden="true"
-    class="fixed right-0 top-0 z-0 text-main-textColor"
+    class="fixed right-0 top-0 z-0 text-main-textColor opacity-0 delay-[0.6s]  "
     data-testid="navi"
     id="navi"
     role="navigation"

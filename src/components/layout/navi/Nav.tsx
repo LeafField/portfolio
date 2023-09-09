@@ -12,7 +12,9 @@ const Nav = () => {
       role="navigation"
       data-testid="navi"
       aria-hidden={!humbarger}
-      className={`fixed right-0 top-0 z-0 text-main-textColor`}
+      className={`fixed right-0 top-0 z-0 text-main-textColor ${
+        !humbarger && "opacity-0 delay-[0.6s] "
+      } `}
     >
       <h2 className={`${pacifico.className} mx-auto w-fit text-[64px]`}>
         Menu
