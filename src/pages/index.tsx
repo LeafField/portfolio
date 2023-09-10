@@ -1,5 +1,4 @@
 import { InferGetStaticPropsType, NextPage } from "next";
-import { getPlaiceholder } from "plaiceholder";
 
 import { client } from "../lib/client";
 

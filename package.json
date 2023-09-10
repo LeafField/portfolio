@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@plaiceholder/next": "^3.0.0",
+    "@types/aria-query": "^5.0.1",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
@@ -22,7 +23,6 @@
     "framer-motion": "^10.16.4",
     "html-react-parser": "^4.2.2",
     "next": "13.4.19",
-    "plaiceholder": "^3.0.0",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -52,6 +52,7 @@
     "microcms-js-sdk": "^2.5.0",
     "microcms-typescript": "^1.0.14",
     "next-router-mock": "^0.9.9",
+    "plaiceholder": "^3.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
     "storybook": "^7.4.0",

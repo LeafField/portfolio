@@ -8,7 +8,7 @@ const meta = {
   component: ContentParser,
   decorators: [
     (StoryComponents) => (
-      <div className={`${noto.className} overflow-x-hidden `}>
+      <div className={`${noto.className} overflow-hidden  `}>
         <StoryComponents />
       </div>
     ),
