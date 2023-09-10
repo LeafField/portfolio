@@ -5,6 +5,7 @@ import { EndPoints } from "../../../types/cms-types";
 import ContentParser from "../../components/atoms/content-parser/ContentParser";
 import { getPlaiceholder } from "plaiceholder";
 import { motion } from "framer-motion";
+import Meta from "../../components/atoms/metadata/Meta";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   try {
@@ -62,6 +63,11 @@ const ContentPage: NextPage<Props> = ({ post }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
+      <Meta
+        title={post.title}
+        description={post.description}
+        imageSrc={post.image.url}
+      />
       <ContentParser post={post} />
     </motion.div>
   );

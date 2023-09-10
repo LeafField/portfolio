@@ -12,15 +12,17 @@ const Nav = () => {
       role="navigation"
       data-testid="navi"
       aria-hidden={!humbarger}
-      className={`fixed right-0 top-0 z-0 text-main-textColor ${
+      className={`fixed right-0 top-0 z-0 flex h-[calc(100svh-64px)] max-h-[650px] flex-col text-main-textColor sm:h-[calc(100svh-96px)] ${
         !humbarger && "opacity-0 delay-[0.6s] "
       } `}
     >
-      <h2 className={`${pacifico.className} mx-auto w-fit text-[64px]`}>
+      <h2
+        className={`${pacifico.className} mx-auto mt-[80px] w-fit text-5xl sm:mt-[112px]`}
+      >
         Menu
       </h2>
       <ul
-        className={`${roboto.className} flex flex-col items-center justify-center space-y-6 p-7 text-4xl sm:space-y-[58px] sm:p-[58px]`}
+        className={`${roboto.className} flex flex-1 flex-col items-center justify-between p-7 text-2xl sm:p-[58px]  sm:text-4xl`}
       >
         <li data-testid="navigation-list">
           <Link

@@ -2,13 +2,39 @@ import React, { FC, useCallback, useRef, useEffect } from "react";
 import Link from "next/link";
 import { EndPoints } from "../../../../types/cms-types";
 import Image from "next/image";
-import parse from "html-react-parser";
-import styles from "./ContentParser.module.css";
+import parse, {
+  HTMLReactParserOptions,
+  Element,
+  domToReact,
+  DOMNode,
+} from "html-react-parser";
 import uTurnImage from "../../../../public/uturn.svg";
 import { motion } from "framer-motion";
 
 type Props = {
   post: EndPoints["get"]["portfolio"];
+};
+
+const parserOptions: HTMLReactParserOptions = {
+  replace: (domNode: DOMNode) => {
+    if (domNode instanceof Element) {
+      if (domNode.name === "h3") {
+        return (
+          <h3 className="mb-2 pt-8 text-2xl font-bold">
+            {domToReact(domNode.children)}
+          </h3>
+        );
+      } else if (domNode.name === "p") {
+        return <p className="pt-1 leading-6">{domToReact(domNode.children)}</p>;
+      } else if (domNode.name === "ul") {
+        return (
+          <ul className="m-[revert] list-disc p-[revert]">
+            {domToReact(domNode.children)}
+          </ul>
+        );
+      }
+    }
+  },
 };
 
 const ContentParser: FC<Props> = ({ post }) => {
@@ -69,9 +95,9 @@ const ContentParser: FC<Props> = ({ post }) => {
           </Link>
         </div>
       </motion.div>
-      <div className={styles.content}>{parse(post.content)}</div>
+      <div className="pt-8">{parse(post.content, parserOptions)}</div>
 
-      <Link scroll={false} href={"/portfolio"} className="mt-8 flex gap-2">
+      <Link scroll={false} href={"/portfolio"} className="mt-16 flex gap-2">
         <Image
           className="block"
           src={uTurnImage}

@@ -7,7 +7,7 @@ import useStore from "../../../store";
 const Header = () => {
   const { humbarger } = useStore();
   return (
-    <header className="sticky left-0 top-0 z-50 w-full bg-whiteColor shadow-md">
+    <header className="fixed left-0 right-0 top-0 z-[1000] w-full bg-whiteColor shadow-md">
       <div className="mx-auto flex h-16 max-w-[1366px] items-center justify-between px-11 sm:h-24 ">
         <h1>
           <Link

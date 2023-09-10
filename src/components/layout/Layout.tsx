@@ -15,21 +15,21 @@ const Layout: FC<Props> = ({ children }) => {
 
   return (
     <>
-      <Nav />
+      <Header />
       <div
-        className={`shadow-right relative z-10 transition-transform duration-500 ${
+        className={`relative z-10 shadow-right transition-transform duration-500 ${
           humbarger && " translate-x-[-70vw] sm:translate-x-[-354px] "
         }`}
       >
         <Whiteout />
-        <Header />
         <main
-          className={`${noto.className} overflow-x-hidden bg-whiteColor pb-[180px]`}
+          className={`${noto.className} overflow-x-hidden bg-whiteColor pb-[180px] pt-[64px] sm:pt-[96px]`}
         >
           {children}
         </main>
         <Footer />
       </div>
+      <Nav />
     </>
   );
 };
