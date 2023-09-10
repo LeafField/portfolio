@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Head from "next/head";
 import { metadata } from "./metadata";
-import thumbnailImage from "../../../../public/portfolioSite.jpg";
+import thumbnailImage from "../../../../public/portfolioSite.jpeg";
 
 type Props = {
   title?: string;
@@ -14,7 +14,7 @@ const Meta: FC<Props> = ({ title }) => {
       <title>{pageTitle}</title>
       <meta property="og:title" content={metadata.title} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={metadata.siteurl} />
+      <meta property="og:url" content={`${metadata.siteurl}/`} />
       <meta
         property="og:image"
         content={`${metadata.siteurl}${thumbnailImage.src}`}
