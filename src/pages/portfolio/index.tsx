@@ -6,6 +6,7 @@ import CardLine from "../../components/portfolio-page/CardLine";
 import { EndPoints } from "../../../types/cms-types";
 import { blurGenerator } from "../../lib/blurGenerator";
 import { motion } from "framer-motion";
+import Meta from "../../components/atoms/metadata/Meta";
 
 export const getStaticProps = async () => {
   try {
@@ -35,6 +36,7 @@ const PortfolioPage: NextPage<Props> = ({ posts }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
+      <Meta title="ポートフォリオ一覧" />
       <PageTop title="Portfolio" />
       <CardLine posts={posts} />
     </motion.div>

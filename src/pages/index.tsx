@@ -10,6 +10,7 @@ import { EndPoints } from "../../types/cms-types";
 import { blurGenerator } from "../lib/blurGenerator";
 
 import { motion } from "framer-motion";
+import Meta from "../components/atoms/metadata/Meta";
 
 export const getStaticProps = async () => {
   try {
@@ -40,6 +41,7 @@ const Home: NextPage<Props> = ({ posts }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
+      <Meta />
       <Hero />
       <Skills />
       <PortfolioSection posts={posts} />
