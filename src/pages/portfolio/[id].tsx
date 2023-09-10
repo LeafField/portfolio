@@ -63,11 +63,7 @@ const ContentPage: NextPage<Props> = ({ post }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <Meta
-        title={post.title}
-        description={post.description}
-        imageSrc={post.image.url}
-      />
+      <Meta title={post.title} />
       <ContentParser post={post} />
     </motion.div>
   );
