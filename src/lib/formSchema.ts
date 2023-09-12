@@ -7,6 +7,7 @@ export const validateSchema = z.object({
     .email("正しいアドレスを入力してください")
     .nonempty("Eメールの入力は必須です"),
   company: z.string(),
+  contact: z.string().min(40, "40文字以上入力してください"),
 });
 
 export type FormType = z.infer<typeof validateSchema>;

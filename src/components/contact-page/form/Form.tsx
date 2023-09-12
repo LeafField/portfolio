@@ -5,6 +5,7 @@ import { validateSchema, FormType } from "../../../lib/formSchema";
 
 import InputText from "./input-text/InputText";
 import SubmitButton from "./submit-btn/SubmitButton";
+import TextArea from "./text-area/TextArea";
 
 const Form = () => {
   const {
@@ -40,6 +41,7 @@ const Form = () => {
         label="会社名(任意)"
         errorMessage={errors.company?.message}
       />
+      <TextArea register={register} errorMessage={errors.contact?.message} />
       <SubmitButton />
     </form>
   );
