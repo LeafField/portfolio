@@ -37,7 +37,10 @@ const InputText: FC<Props> = ({
           {...register(registerType)}
         />
       </div>
-      <p className="pt-2 text-base leading-4 text-red-700 sm:ml-[255px]">
+      <p
+        data-testid="inputError"
+        className="pt-2 text-base leading-4 text-red-700 sm:ml-[255px]"
+      >
         {errorMessage}
       </p>
     </div>

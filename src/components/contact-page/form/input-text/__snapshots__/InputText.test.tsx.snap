@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputTextの単体テスト スナップショットテスト 1`] = `
+<div>
+  <div
+    class="mx-auto  border-t border-t-mainColor px-4 pb-[22px] "
+  >
+    <div
+      class="flex max-w-[1000px] flex-col items-center justify-start gap-2  pt-[46px] sm:flex-row"
+    >
+      <label
+        class="block w-full cursor-pointer text-left text-xl sm:w-[250px] sm:text-right "
+        for="name"
+      >
+        お名前
+        :
+      </label>
+      <input
+        class="block w-full flex-1 border border-mainColor/70 p-1 text-xl outline-none focus:border-mainColor mr-auto max-w-[300px] "
+        id="name"
+        type="text"
+      />
+    </div>
+    <p
+      class="pt-2 text-base leading-4 text-red-700 sm:ml-[255px]"
+      data-testid="inputError"
+    >
+      名前は必須です
+    </p>
+  </div>
+</div>
+`;
