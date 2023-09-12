@@ -13,7 +13,7 @@ const Nav = () => {
       data-testid="navi"
       aria-hidden={!humbarger}
       className={`fixed right-0 top-0 z-0 flex h-[calc(100svh-64px)] max-h-[650px] flex-col text-main-textColor sm:h-[calc(100svh-96px)] ${
-        !humbarger && "opacity-0 delay-[0.6s] "
+        !humbarger && "opacity-0 delay-[0.2s]"
       } `}
     >
       <h2

@@ -23,7 +23,7 @@ const Layout: FC<Props> = ({ children }) => {
       >
         <Whiteout />
         <main
-          className={`${noto.className} overflow-x-hidden bg-whiteColor pb-[180px] pt-[64px] sm:pt-[96px]`}
+          className={`${noto.className} relative z-10 overflow-x-hidden bg-whiteColor pb-[180px] pt-[64px] sm:pt-[96px]`}
         >
           {children}
         </main>
