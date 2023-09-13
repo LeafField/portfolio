@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HtmlParserの単体テスト スナップショットテスト 1`] = `
+<div>
+  <div
+    class="pt-8"
+  >
+    <h3
+      class="mb-2 pt-8 text-2xl font-bold"
+    >
+      アプリ概要
+    </h3>
+    <p
+      class="pt-1 leading-6"
+    >
+      ポートフォリオを載せるサイトです。ナチュラルモダンのイメージでFigmaでデザインしNext.jsとMicroCMSを使用し開発しました
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      私がフロントエンドエンジニアを目指すきっかけになったのは色々なエンジニアが作る数々のポートフォリオサイトでした。
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      始めはどんなエンジニアを目指そうか、その目標を探すべくポートフォリオサイトを見ていたのですが、いつしかポートフォリオを入れる箱であるポートフォリオサイトの方に魅せられていました
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      いつか、あんなサイトを作ってみたい。そんな思いでずっとプログラミングの勉強をしてきましたがまだまだ道半ば。
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      プログラミングはもちろんですが、凄いポートフォリオサイトを作るにはデザインスキルやアニメーションのスキルも必要で、このサイトを作るにあたって非常に力不足を感じた所です。
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      なんかちょっと足りないな、そう思って付け足して見てもなんか違う。その繰り返しで四苦八苦しながら作ったこのサイトは未だ目標とするようなクリエイティブなサイトには遠く及ばないけれど凄く愛着が湧くサイトになりました。
+    </p>
+    <h3
+      class="mb-2 pt-8 text-2xl font-bold"
+    >
+      使用技術
+    </h3>
+    <ul
+      class="m-[revert] list-disc p-[revert]"
+    >
+      <li>
+        Next.js(Page Router)
+      </li>
+      <li>
+        TypeScript
+      </li>
+      <li>
+        MicroCMS
+      </li>
+      <li>
+        zustand
+      </li>
+      <li>
+        Tailwind CSS
+      </li>
+      <li>
+        Storybook
+      </li>
+    </ul>
+    <p
+      class="pt-1 leading-6"
+    >
+      フロントエンドはNext.jsとTypeScriptを使用、バックエンドはMicroCMS及びNext.jsのAPI Routesを使用しています。
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      zustandはハンバーガーメニューのstate管理やオープニングアニメーションのフラグ管理に使用。Reduxは最近余り見なくなり、Recoilは開発元が開発出来なくなっているようで今後のReactのstate管理には何が使われるのでしょうか？私はzustandを推したい
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      CSSはTailwind CSSを使用。一部疑似要素のプロパティが多いタグに対してはCSS Modulesを使用しています。CSS loaderが今後CSS Modulesについて対応しないと明言しReact公式でも非推奨になった為忘れ去られつつあるCSS ModulesですがNext.jsやViteは独自に対応してくれている為、今後もピンポイントで使う機会も出てくるのかなと思い採用。
+    </p>
+    <h3
+      class="mb-2 pt-8 text-2xl font-bold"
+    >
+      今後の課題
+    </h3>
+    <p
+      class="pt-1 leading-6"
+    >
+      デザインスキルやアニメーション周りのスキルの不足もあり、全体的に地味というか物足りないサイトになってしまったのが残念なポイント。
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      将来的にwebデザインやモーショングラフィックス等を勉強し、今度こそ見た人があっと驚くようなポートフォリオサイトを作りたいです。
+    </p>
+    <p
+      class="pt-1 leading-6"
+    >
+      最近Figmaのアップデートがあり、ただでさえ覚束ないFigmaの操作がさらに覚束なくなりました。Figmaの習熟も今後の課題です。
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentImageの単体テスト スナップショットテスト 1`] = `
+<div>
+  <figure
+    class="relative mr-auto aspect-video w-[90%] overflow-hidden "
+  >
+    <img
+      alt="このポートフォリオサイト"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height="40"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent; width: 100%; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+      width="40"
+    />
+  </figure>
+  <div
+    class="relative z-10 ml-auto mr-[calc(50%-50*var(--vw))] mt-[-24px] w-fit border border-r-0 border-whiteColor bg-mainColor/10 py-4 pl-4 pr-[calc(50*var(--vw)-50%)] text-right shadow-md backdrop-blur-sm "
+    style="transform: translateX(100%) translateZ(0); --vw: 0px;"
+  >
+    <h2
+      class=" text-xl text-main-textColor sm:text-3xl"
+    >
+      このポートフォリオサイト
+    </h2>
+    <div
+      class="mt-1 flex flex-row-reverse gap-8"
+    >
+      <a
+        class="ml-auto mt-2 block w-fit leading-4 text-blue-700 underline "
+        href="https://portfolio-site-virid-alpha.vercel.app/"
+        target="_blank"
+      >
+        サイトURL
+      </a>
+      <a
+        class="ml-auto mt-2 block w-fit leading-4 text-blue-700 underline "
+        href="https://github.com/LeafField/portfolio"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+`;

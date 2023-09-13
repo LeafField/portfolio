@@ -9,27 +9,22 @@ import parse, {
 
 const parserOptions: HTMLReactParserOptions = {
   replace: (domNode: DOMNode) => {
-    if (!(domNode instanceof Element)) return;
-    switch (domNode.name) {
-      case "h3":
+    if (domNode instanceof Element) {
+      if (domNode.name === "h3") {
         return (
           <h3 className="mb-2 pt-8 text-2xl font-bold">
             {domToReact(domNode.children)}
           </h3>
         );
-
-      case "p":
+      } else if (domNode.name === "p") {
         return <p className="pt-1 leading-6">{domToReact(domNode.children)}</p>;
-
-      case "ul":
+      } else if (domNode.name === "ul") {
         return (
           <ul className="m-[revert] list-disc p-[revert]">
             {domToReact(domNode.children)}
           </ul>
         );
-
-      default:
-        return domNode;
+      }
     }
   },
 };
