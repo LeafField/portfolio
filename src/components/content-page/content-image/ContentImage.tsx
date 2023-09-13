@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { EndPoints } from "../../../../../types/cms-types";
+import { EndPoints } from "../../../../types/cms-types";
 import { motion } from "framer-motion";
 
 type Props = {

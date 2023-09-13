@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import ContentParser from "./ContentParser";
-import { noto } from "../../../lib/font";
-import { dummyContentData } from "../../../lib/dummyData";
+import { noto } from "../../lib/font";
+import { dummyContentData } from "../../lib/dummyData";
 
 const meta = {
   title: "content-page/parser",

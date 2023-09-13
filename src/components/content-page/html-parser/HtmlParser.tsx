@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { EndPoints } from "../../../../../types/cms-types";
+import { EndPoints } from "../../../../types/cms-types";
 import parse, {
   DOMNode,
   HTMLReactParserOptions,

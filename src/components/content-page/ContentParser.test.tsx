@@ -1,6 +1,6 @@
 import { screen, render } from "@testing-library/react";
 import ContentParser from "./ContentParser";
-import { dummyContentData } from "../../../lib/dummyData";
+import { dummyContentData } from "../../lib/dummyData";
 
 describe("ContentParserの結合テスト", () => {
   it("ダミーデータに対してタイトル、リンクが正しく表示されているか", () => {
