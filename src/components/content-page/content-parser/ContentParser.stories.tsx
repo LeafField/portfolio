@@ -4,7 +4,7 @@ import { noto } from "../../../lib/font";
 import { dummyContentData } from "../../../lib/dummyData";
 
 const meta = {
-  title: "atoms/parser",
+  title: "content-page/parser",
   component: ContentParser,
   decorators: [
     (StoryComponents) => (
