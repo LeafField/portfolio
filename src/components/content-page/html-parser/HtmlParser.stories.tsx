@@ -1,26 +1,25 @@
 import { Meta, StoryObj } from "@storybook/react";
-import ContentParser from "./ContentParser";
+import HtmlParser from "./HtmlParser";
 import { noto } from "../../../lib/font";
 import { dummyContentData } from "../../../lib/dummyData";
 
-const meta = {
-  title: "atoms/parser",
-  component: ContentParser,
+const meta: Meta<typeof HtmlParser> = {
+  title: "content-page/HtmlParser",
+  component: HtmlParser,
   decorators: [
     (StoryComponents) => (
-      <div className={`${noto.className} overflow-hidden  `}>
+      <div className={`${noto.className} mx-auto max-w-[816px] `}>
         <StoryComponents />
       </div>
     ),
   ],
-} satisfies Meta<typeof ContentParser>;
+  args: {
+    post: dummyContentData,
+  },
+};
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const DummyContentStory: Story = {
-  args: {
-    post: dummyContentData,
-  },
-};
+export const HtmlParserStory: Story = {};

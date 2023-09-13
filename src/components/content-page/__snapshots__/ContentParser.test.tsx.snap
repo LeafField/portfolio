@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContentParserの単体テスト スナップショットテスト 1`] = `
+exports[`ContentParserの結合テスト スナップショットテスト 1`] = `
 <div>
   <article
     class="mx-auto max-w-[816px] px-4 pt-[80px] "
@@ -33,14 +33,14 @@ exports[`ContentParserの単体テスト スナップショットテスト 1`] =
         class="mt-1 flex flex-row-reverse gap-8"
       >
         <a
-          class="ml-auto mt-2 block w-fit leading-4 text-[revert] text-blue-700 underline "
+          class="ml-auto mt-2 block w-fit leading-4 text-blue-700 underline "
           href="https://portfolio-site-virid-alpha.vercel.app/"
           target="_blank"
         >
           サイトURL
         </a>
         <a
-          class="ml-auto mt-2 block w-fit leading-4 text-[revert] text-blue-700 underline "
+          class="ml-auto mt-2 block w-fit leading-4 text-blue-700 underline "
           href="https://github.com/LeafField/portfolio"
           target="_blank"
         >

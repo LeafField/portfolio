@@ -2,7 +2,7 @@ import React from "react";
 import { InferGetStaticPropsType, GetStaticPaths, NextPage } from "next/types";
 import { client } from "../../lib/client";
 import { EndPoints } from "../../../types/cms-types";
-import ContentParser from "../../components/atoms/content-parser/ContentParser";
+import ContentParser from "../../components/content-page/ContentParser";
 import { getPlaiceholder } from "plaiceholder";
 import { motion } from "framer-motion";
 import Meta from "../../components/atoms/metadata/Meta";

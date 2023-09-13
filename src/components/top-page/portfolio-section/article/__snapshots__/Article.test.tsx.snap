@@ -15,18 +15,17 @@ exports[`Articleの単体テスト スナップショットテスト 1`] = `
           href="/portfolio/fsdfhjskjd"
         >
           <figure
-            class="aspect-video w-full overflow-hidden md:max-h-[229px]  "
+            class="relative aspect-video w-full overflow-hidden md:max-h-[229px] "
           >
             <img
               alt="サムネイル画像"
-              data-nimg="1"
+              data-nimg="fill"
               decoding="async"
-              height="40"
               loading="lazy"
-              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-              style="color: transparent; max-width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-              width="40"
+              sizes="(min-width:768px) 50vw,100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             />
           </figure>
           <h3

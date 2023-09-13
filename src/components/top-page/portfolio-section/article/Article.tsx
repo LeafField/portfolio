@@ -15,15 +15,15 @@ const Article: FC<Props> = ({ post }) => {
       className="transition duration-300 hover:translate-x-[-1px] hover:translate-y-[-2px] hover:shadow-lg "
     >
       <Link href={`/portfolio/${post.id}`} scroll={false}>
-        <figure className="aspect-video w-full overflow-hidden md:max-h-[229px]  ">
+        <figure className="relative aspect-video w-full overflow-hidden md:max-h-[229px] ">
           <Image
             src={post.image.url}
             alt="サムネイル画像"
-            width={post.image.width}
-            height={post.image.height}
-            style={{ maxWidth: "100%", height: "100%" }}
+            fill
+            style={{ objectFit: "cover" }}
             placeholder="blur"
             blurDataURL={post.image.blurDataURL}
+            sizes="(min-width:768px) 50vw,100vw"
           />
         </figure>
         <h3

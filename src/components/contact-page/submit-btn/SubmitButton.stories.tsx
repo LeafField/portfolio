@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import SubmitButton from "./SubmitButton";
-import { noto } from "../../../../lib/font";
+import { noto } from "../../../lib/font";
 
 const meta: Meta<typeof SubmitButton> = {
   title: "contact-page/submitButton",
