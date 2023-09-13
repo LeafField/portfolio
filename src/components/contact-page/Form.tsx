@@ -2,6 +2,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { validateSchema, FormType } from "../../lib/formSchema";
+import axios from "axios";
 
 import InputText from "./input-text/InputText";
 import SubmitButton from "./submit-btn/SubmitButton";
@@ -21,9 +22,8 @@ const Form = () => {
 
   const onSubmit: SubmitHandler<FormType> = async (data: FormType) => {
     try {
-      await fetch("/api/mail", {
-        body: JSON.stringify(data),
-        method: "POST",
+      await axios.post("/api/mail", JSON.stringify(data), {
+        headers: { "Content-Type": "application/json" },
       });
     } catch (err: any) {
       throw new Error(err);

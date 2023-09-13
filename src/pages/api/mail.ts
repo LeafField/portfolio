@@ -15,10 +15,13 @@ const transporter = nodemailer.createTransport({
 });
 
 const mail = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== "POST")
-    return res.status(404).json({ message: "無効なアクセスです" });
+  if (
+    req.method !== "POST" &&
+    req.headers["content-type"] !== "application/json"
+  )
+    return res.status(403).json({ message: "無効なアクセスです" });
 
-  const formData: FormType = JSON.parse(req.body);
+  const formData: FormType = req.body;
 
   try {
     await transporter.sendMail({
