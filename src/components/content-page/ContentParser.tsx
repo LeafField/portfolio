@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Link from "next/link";
 import { EndPoints } from "../../../types/cms-types";
 import Image from "next/image";
-import uTurnImage from "../../../../public/uturn.svg";
+import uTurnImage from "../../../public/uturn.svg";
 import HtmlParser from "./html-parser/HtmlParser";
 import ContentImage from "./content-image/ContentImage";
 
