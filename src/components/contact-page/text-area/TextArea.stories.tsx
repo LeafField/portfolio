@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import TextArea from "./TextArea";
-import { noto } from "../../../../lib/font";
+import { noto } from "../../../lib/font";
 
 const dummyFn: () => any = () => {};
 

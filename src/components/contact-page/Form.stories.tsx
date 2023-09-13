@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Form from "./Form";
-import { noto } from "../../../lib/font";
+import { noto } from "../../lib/font";
 
 const meta: Meta<typeof Form> = {
   title: "contact-page/Form",
   component: Form,
   decorators: [
     (StoryComponents) => (
-      <div className={`${noto.className} mx-auto max-w-[1000px] pt-4 `}>
+      <div className={`${noto.className}`}>
         <StoryComponents />
       </div>
     ),

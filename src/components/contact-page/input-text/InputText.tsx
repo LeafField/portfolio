@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { UseFormRegister } from "react-hook-form";
-import { FormType } from "../../../../lib/formSchema";
+import { FormType } from "../../../lib/formSchema";
 
 type Props = {
   register: UseFormRegister<FormType>;

@@ -1,7 +1,7 @@
 import { screen, render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import InputText from "./InputText";
-import { FormType } from "../../../../lib/formSchema";
+import { FormType } from "../../../lib/formSchema";
 
 const renderedComponents = (
   label: string,

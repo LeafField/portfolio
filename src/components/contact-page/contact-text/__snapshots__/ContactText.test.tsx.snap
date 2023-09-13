@@ -3,7 +3,7 @@
 exports[`ContactTextの単体テスト スナップショットテスト 1`] = `
 <div>
   <p
-    class="mx-auto max-w-[600px] pt-[180px] text-xl leading-6 "
+    class="mx-auto max-w-[640px] px-4 pt-[180px] text-xl leading-6 "
   >
     各ポートフォリオへのご意見・ご感想、面接企業様からのご連絡、 個人開発へのお誘い等何かございましたらこちらからどうぞ。
   </p>
