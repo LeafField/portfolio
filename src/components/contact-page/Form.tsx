@@ -20,7 +20,14 @@ const Form = () => {
   });
 
   const onSubmit: SubmitHandler<FormType> = async (data: FormType) => {
-    console.log(data);
+    try {
+      await fetch("/api/mail", {
+        body: JSON.stringify(data),
+        method: "POST",
+      });
+    } catch (err: any) {
+      throw new Error(err);
+    }
   };
 
   return (
