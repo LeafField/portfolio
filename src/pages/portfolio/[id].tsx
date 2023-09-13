@@ -1,5 +1,10 @@
 import React from "react";
-import { InferGetStaticPropsType, GetStaticPaths, NextPage } from "next/types";
+import {
+  InferGetStaticPropsType,
+  GetStaticPaths,
+  NextPage,
+  GetStaticPropsContext,
+} from "next/types";
 import { client } from "../../lib/client";
 import { EndPoints } from "../../../types/cms-types";
 import ContentParser from "../../components/content-page/ContentParser";
@@ -26,12 +31,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 type Params = {
-  params: {
-    id: string;
-  };
+  id: string;
 };
 
-export const getStaticProps = async ({ params }: Params) => {
+export const getStaticProps = async ({
+  params,
+}: GetStaticPropsContext<Params>) => {
   try {
     const post = await client.get<EndPoints["get"]["portfolio"]>({
       endpoint: "portfolio",
