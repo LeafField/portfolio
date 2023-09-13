@@ -2,18 +2,22 @@ import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 import { FormType } from "../../lib/formSchema";
 
-const mail = async (req: NextApiRequest, res: NextApiResponse) => {
-  const user = process.env.MAIL_ACCOUNT;
-  const pass = process.env.MAIL_PASSWORD;
+const user = process.env.MAIL_ACCOUNT;
+const pass = process.env.MAIL_PASSWORD;
 
-  const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.mail.yahoo.co.jp",
-    auth: {
-      user,
-      pass,
-    },
-  });
+const transporter = nodemailer.createTransport({
+  port: 465,
+  host: "smtp.mail.yahoo.co.jp",
+  auth: {
+    user,
+    pass,
+  },
+});
+
+const mail = async (req: NextApiRequest, res: NextApiResponse) => {
+  if (req.method !== "POST")
+    return res.status(404).json({ message: "無効なアクセスです" });
+
   const formData: FormType = JSON.parse(req.body);
 
   try {
