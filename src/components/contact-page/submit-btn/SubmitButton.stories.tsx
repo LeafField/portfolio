@@ -21,4 +21,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const SubmitButtonStory: Story = {};
+export const SubmitButtonStory: Story = {
+  args: {
+    busy: false,
+  },
+};

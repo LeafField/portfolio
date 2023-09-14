@@ -57,7 +57,7 @@ const Form = () => {
           errorMessage={errors.company?.message}
         />
         <TextArea register={register} errorMessage={errors.contact?.message} />
-        <SubmitButton />
+        <SubmitButton busy={false} />
       </form>
     </>
   );
