@@ -21,7 +21,7 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
   )
     return res.status(403).json({ message: "無効なアクセスです" });
 
-  const formData: FormType = req.body;
+  const formData: FormType = JSON.parse(req.body);
 
   try {
     await transporter.sendMail({

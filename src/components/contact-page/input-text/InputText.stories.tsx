@@ -9,6 +9,7 @@ const meta: Meta<typeof InputText> = {
   component: InputText,
   args: {
     register: dummyFn,
+    busy: false,
   },
   decorators: [
     (StoryComponents) => (
