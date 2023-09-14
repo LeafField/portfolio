@@ -14,6 +14,7 @@ const renderedComponents = (
       registerType={type}
       register={jest.fn()}
       errorMessage={errorMessage}
+      busy={false}
     />,
   );
 

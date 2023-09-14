@@ -5,9 +5,10 @@ import { FormType } from "../../../lib/formSchema";
 type Props = {
   register: UseFormRegister<FormType>;
   errorMessage?: string | undefined;
+  busy: boolean;
 };
 
-const TextArea: FC<Props> = ({ errorMessage, register }) => {
+const TextArea: FC<Props> = ({ errorMessage, register, busy }) => {
   return (
     <div
       className={`mx-auto  border-y border-t-mainColor px-4 ${
@@ -24,6 +25,7 @@ const TextArea: FC<Props> = ({ errorMessage, register }) => {
         <textarea
           className="block min-h-[300px] w-full flex-1 resize-none border border-mainColor/70 p-1 text-xl outline-none focus:border-mainColor sm:h-[500px]"
           id="contact"
+          disabled={busy}
           {...register("contact")}
         ></textarea>
       </div>

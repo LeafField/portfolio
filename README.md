@@ -1,38 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## アプリ概要
 
-## Getting Started
+ポートフォリオを載せるサイトです。ナチュラルモダンのイメージでFigmaでデザインしNext.jsとMicroCMSを使用し開発しました。  
+私がフロントエンドエンジニアを目指すきっかけになったのは色々なエンジニアが作る数々のポートフォリオサイトでした。  
+始めはどんなエンジニアを目指そうか、その目標を探すべくポートフォリオサイトを見ていたのですが、いつしかポートフォリオを入れる箱であるポートフォリオサイトの方に魅せられていました  
+いつか、あんなサイトを作ってみたい。そんな思いでずっとプログラミングの勉強をしてきましたがまだまだ道半ば。  
+プログラミングはもちろんですが、凄いポートフォリオサイトを作るにはデザインスキルやアニメーションのスキルも必要で、このサイトを作るにあたって非常に力不足を感じた所です。  
+なんかちょっと足りないな、そう思って付け足して見てもなんか違う。その繰り返しで四苦八苦しながら作ったこのサイトは未だ目標とするようなクリエイティブなサイトには遠く及ばないけれど凄く愛着が湧くサイトになりました。
 
-First, run the development server:
+## 使用技術
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Next.js(Page Router)
+TypeScript
+MicroCMS
+zustand
+Tailwind CSS
+Storybook
+フロントエンドはNext.jsとTypeScriptを使用、バックエンドはMicroCMS及びNext.jsのAPI Routesを使用しています。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+zustandはハンバーガーメニューのstate管理やオープニングアニメーションのフラグ管理に使用。Reduxは最近余り見なくなり、Recoilは開発元が開発出来なくなっているようで今後のReactのstate管理には何が使われるのでしょうか？私はzustandを推したいです。  
+CSSはTailwind CSSを使用。一部疑似要素のプロパティが多いタグに対してはCSS Modulesを使用しています。CSS loaderが今後CSS Modulesについて対応しないと明言しReact公式でも非推奨になった為忘れ去られつつあるCSS ModulesですがNext.jsやViteは独自に対応してくれている為、今後もピンポイントで使う機会も出てくるのかなと思い採用。
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 今後の課題
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+デザインスキルやアニメーション周りのスキルの不足もあり、全体的に地味というか物足りないサイトになってしまったのが残念なポイント。  
+将来的にwebデザインやモーショングラフィックス等を勉強し、今度こそ見た人があっと驚くようなポートフォリオサイトを作りたいです。  
+最近Figmaのアップデートがあり、ただでさえ覚束ないFigmaの操作がさらに覚束なくなりました。Figmaの習熟も今後の課題です。

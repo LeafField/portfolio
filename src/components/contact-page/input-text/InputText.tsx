@@ -7,6 +7,7 @@ type Props = {
   registerType: keyof FormType;
   label: string;
   errorMessage?: string | undefined;
+  busy: boolean;
 };
 
 const InputText: FC<Props> = ({
@@ -14,6 +15,7 @@ const InputText: FC<Props> = ({
   registerType,
   label,
   errorMessage,
+  busy,
 }) => {
   return (
     <div
@@ -34,6 +36,7 @@ const InputText: FC<Props> = ({
           }`}
           type="text"
           id={registerType}
+          disabled={busy}
           {...register(registerType)}
         />
       </div>

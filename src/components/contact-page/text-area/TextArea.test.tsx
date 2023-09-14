@@ -4,7 +4,7 @@ import TextArea from "./TextArea";
 
 const renderedComponent = (errorMessage?: string) => {
   const { container } = render(
-    <TextArea register={jest.fn()} errorMessage={errorMessage} />,
+    <TextArea busy={false} register={jest.fn()} errorMessage={errorMessage} />,
   );
   return { container, errorMessage };
 };

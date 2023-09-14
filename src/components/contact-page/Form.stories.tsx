@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Form from "./Form";
 import { noto } from "../../lib/font";
+import { rest } from "msw";
 
 const meta: Meta<typeof Form> = {
   title: "contact-page/Form",
@@ -12,6 +13,19 @@ const meta: Meta<typeof Form> = {
       </div>
     ),
   ],
+  parameters: {
+    msw: {
+      handlers: [
+        rest.post("/api/mail", (req, res, ctx) => {
+          return res(
+            ctx.json({
+              message: "送信できました",
+            }),
+          );
+        }),
+      ],
+    },
+  },
 };
 
 export default meta;
