@@ -5,6 +5,7 @@ exports[`クリックイベントに対してaria-expandedが正しく反応し�
   <button
     aria-controls="navi"
     aria-expanded="true"
+    class="mr-[-1rem] p-4 "
     type="button"
   >
     <span

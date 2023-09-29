@@ -14,6 +14,7 @@ const Humbarger = () => {
       aria-controls="navi"
       aria-expanded={humbarger}
       onClick={clickHandler}
+      className="mr-[-1rem] p-4 "
     >
       <span
         className={`block h-[1px] w-6 bg-main-textColor transition-transform duration-[500ms] ${
