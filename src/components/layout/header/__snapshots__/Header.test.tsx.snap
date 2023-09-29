@@ -19,6 +19,7 @@ exports[`Headerの単体テスト スナップショットテスト 1`] = `
       <button
         aria-controls="navi"
         aria-expanded="false"
+        class="mr-[-1rem] p-4 "
         type="button"
       >
         <span
