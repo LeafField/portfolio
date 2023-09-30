@@ -5,6 +5,7 @@ import useStore from "../../store";
 import Nav from "./navi/Nav";
 import { noto } from "../../lib/font";
 import Whiteout from "../atoms/whiteout/Whiteout";
+import Modal from "./modal/Modal";
 
 type Props = {
   children: ReactNode;
@@ -23,13 +24,14 @@ const Layout: FC<Props> = ({ children }) => {
       >
         <Whiteout />
         <main
-          className={`${noto.className} relative z-10 overflow-x-hidden bg-whiteColor pb-[180px] pt-[64px] sm:pt-[96px]`}
+          className={`${noto.className}  overflow-x-hidden bg-whiteColor pb-[180px] pt-[64px] sm:pt-[96px]`}
         >
           {children}
         </main>
         <Footer />
       </div>
       <Nav />
+      <Modal />
     </>
   );
 };

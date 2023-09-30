@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loadingの単体テスト スナップショットテスト 1`] = `
+<div>
+  <div
+    class="h-6 w-6"
+  >
+    <div
+      class="h-full w-full animate-spin rounded-full border-4 border-mainColor border-t-transparent "
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,7 @@
 import { screen, render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Form from "./Form";
+import Modal from "../layout/modal/Modal";
 
 const dummyType = async () => {
   await userEvent.type(
@@ -45,31 +46,45 @@ describe("Formの結合テスト", () => {
   });
 
   it("正常系:フォーム内容が正しく送信できた時、ボタンに送信完了と表示され成功のアラートが表示される", async () => {
-    render(<Form />);
+    render(
+      <>
+        <Modal />
+        <Form />
+      </>,
+    );
     global.fetch = jest
       .fn()
       .mockImplementation(() => Promise.resolve({ status: 200 }));
-    global.alert = jest.fn();
     await dummyType();
 
-    waitFor(() => {
-      expect(global.fetch).toHaveBeenCalled();
+    expect(global.fetch).toHaveBeenCalled();
+    await waitFor(() => {
       expect(
         screen.getByRole("button", { name: "送信完了" }),
       ).toBeInTheDocument();
-      expect(global.alert).toHaveBeenCalledWith("フォームの送信が完了しました");
+      expect(screen.getByRole("dialog")).toHaveTextContent("送信完了しました");
+    });
+
+    await userEvent.click(screen.getByRole("button", { name: "Close" }));
+    await waitFor(() => {
+      expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
     });
   });
 
   it("異常系:フォーム内容は正しく送信できたがサーバー側でエラーが発生した時、送信失敗のアラートが表示される", async () => {
-    render(<Form />);
+    render(
+      <>
+        <Modal />
+        <Form />
+      </>,
+    );
     global.fetch = jest
       .fn()
       .mockImplementation(() => Promise.reject({ status: 500 }));
     global.alert = jest.fn();
     await dummyType();
 
-    waitFor(() => {
+    await waitFor(() => {
       expect(global.alert).toHaveBeenCalledWith(
         "フォームの送信に失敗しました。お手数ですが、X(Twitter)のLeafFieldまでご連絡頂けたら幸いです。",
       );

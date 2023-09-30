@@ -51,7 +51,7 @@ describe("Layoutの結合テスト", () => {
     });
 
     await userEvent.click(screen.getByTestId("navigation-list"));
-    waitFor(() => {
+    await waitFor(() => {
       expect(humbarger).toHaveAttribute("aria-expanded", "false");
     });
   });
@@ -73,7 +73,7 @@ describe("Layoutの結合テスト", () => {
     });
 
     await userEvent.click(blackoutComponent);
-    waitFor(() => {
+    await waitFor(() => {
       expect(blackoutComponent).toHaveClass("pointer-events-none opacity-0");
       expect(humbarger).toHaveAttribute("aria-expanded", "false");
     });
