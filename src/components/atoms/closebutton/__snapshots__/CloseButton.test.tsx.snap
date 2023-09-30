@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CloseButtonの単体テスト スナップショットテスト 1`] = `
+<div>
+  <button
+    class="flex items-center justify-center border border-mainColor/30 px-3 py-1 text-main-textColor transition-colors duration-300 hover:border-mainColor className"
+  >
+    Close
+  </button>
+</div>
+`;

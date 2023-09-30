@@ -8,10 +8,12 @@ import SubmitButton from "./submit-btn/SubmitButton";
 import TextArea from "./text-area/TextArea";
 import ContactText from "./contact-text/ContactText";
 import PageTop from "../atoms/page-top/PageTop";
+import useStore from "../../store";
 
 const Form = () => {
   const [busy, setBusy] = useState<boolean>(false);
   const [completed, setCompleted] = useState<boolean>(false);
+  const { showModal } = useStore();
 
   const {
     register,
@@ -25,6 +27,7 @@ const Form = () => {
 
   const onSubmit: SubmitHandler<FormType> = async (data: FormType) => {
     setBusy(true);
+    showModal({ show: true, message: "送信中です...", completed: false });
     reset();
     try {
       const res = await fetch("/api/mail/", {
@@ -33,9 +36,10 @@ const Form = () => {
       });
       if (res.status === 200) {
         setCompleted(true);
-        alert("フォームの送信が完了しました");
+        showModal({ show: true, message: "送信完了しました", completed: true });
       }
     } catch (err: any) {
+      showModal({ show: false });
       alert(
         "フォームの送信に失敗しました。お手数ですが、X(Twitter)のLeafFieldまでご連絡頂けたら幸いです。",
       );

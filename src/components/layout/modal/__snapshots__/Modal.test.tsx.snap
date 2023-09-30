@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modalの単体テスト 送信が完了した時 1`] = `
+<div>
+  <div
+    class="fixed inset-0 z-[10000] flex min-h-screen w-full items-center justify-center bg-whiteColor/60 cursor-pointer "
+  >
+    <dialog
+      class="animate-wakeUp relative z-[10010] flex h-20 w-72 flex-col items-center justify-start gap-2 bg-white pt-2 text-main-textColor shadow-md "
+      open=""
+    >
+      <span>
+        送信完了しました
+      </span>
+      <button
+        class="flex items-center justify-center border border-mainColor/30 px-3 py-1 text-main-textColor transition-colors duration-300 hover:border-mainColor className"
+      >
+        Close
+      </button>
+    </dialog>
+  </div>
+</div>
+`;
+
+exports[`Modalの単体テスト 送信中の時 1`] = `
+<div>
+  <div
+    class="fixed inset-0 z-[10000] flex min-h-screen w-full items-center justify-center bg-whiteColor/60 false "
+  >
+    <dialog
+      class="animate-wakeUp relative z-[10010] flex h-20 w-72 flex-col items-center justify-start gap-2 bg-white pt-2 text-main-textColor shadow-md "
+      open=""
+    >
+      <span>
+        送信中です...
+      </span>
+      <div
+        class="h-6 w-6"
+      >
+        <div
+          class="h-full w-full animate-spin rounded-full border-4 border-mainColor border-t-transparent "
+        />
+      </div>
+    </dialog>
+  </div>
+</div>
+`;
