@@ -12,6 +12,7 @@ exports[`Articleの単体テスト スナップショットテスト 1`] = `
         class="transition duration-300 hover:translate-x-[-1px] hover:translate-y-[-2px] hover:shadow-lg "
       >
         <a
+          class="block h-full"
           href="/portfolio/fsdfhjskjd"
         >
           <figure
