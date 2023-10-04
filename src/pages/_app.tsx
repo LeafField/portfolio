@@ -5,6 +5,7 @@ import Head from "next/head";
 import { useCallback, useEffect } from "react";
 import useStore from "../store";
 import { AnimatePresence } from "framer-motion";
+import Opening from "../components/atoms/opening/Opening";
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const { humbargerToggle } = useStore();
@@ -14,20 +15,25 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   useEffect(() => {
     router.events.on("beforeHistoryChange", humbargerClose);
-
     return () => {
       router.events.off("beforeHistoryChange", humbargerClose);
     };
   }, [router.events, humbargerClose]);
   return (
-    <Layout>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-        <title>LeafField</title>
-      </Head>
-      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
-        <Component key={router.asPath} {...pageProps} />
-      </AnimatePresence>
-    </Layout>
+    <>
+      <Opening />
+      <Layout>
+        <Head>
+          <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+          <title>LeafField</title>
+        </Head>
+        <AnimatePresence
+          mode="wait"
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
+          <Component key={router.asPath} {...pageProps} />
+        </AnimatePresence>
+      </Layout>
+    </>
   );
 }
