@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import Lottie from "lottie-react";
 import animData from "./animData.json";
 
-const Opening = () => {
+type Props = {
+  stopAnimation?: boolean;
+};
+
+const Opening: FC<Props> = ({ stopAnimation = false }) => {
   const [animStatus, setAnimStatus] = useState<boolean>(false);
   const [invisible, setInvisible] = useState<boolean>(false);
 
   const completedHandler = () => {
+    if (stopAnimation) return;
     setAnimStatus(true);
     window.scrollTo(0, 0);
     setTimeout(() => {
@@ -20,12 +25,14 @@ const Opening = () => {
         animStatus ? "opacity-0" : ""
       } ${invisible ? "invisible" : ""} `}
     >
-      <Lottie
-        animationData={animData}
-        className=" h-fit w-[320px] "
-        loop={false}
-        onComplete={completedHandler}
-      />
+      <div className="h-[265px] w-[320px]">
+        <Lottie
+          animationData={animData}
+          className="h-[265px] w-[320px]"
+          loop={false}
+          onComplete={completedHandler}
+        />
+      </div>
       <p className="text-xl">ようこそ、わたしのポートフォリオへ！</p>
     </div>
   );

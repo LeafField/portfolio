@@ -10,4 +10,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const OpeningAnimationStory: Story = {};
+export const OpeningAnimationStory: Story = {
+  args: {
+    stopAnimation: true,
+  },
+};
