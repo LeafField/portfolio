@@ -12,6 +12,7 @@ const config: Config = {
         "main-textColor": "#333333",
         mainColor: "#B6B6B6",
         whiteColor: "#FDFDFD",
+        footerColor: "#9d9d9d",
       },
       boxShadow: {
         right:
