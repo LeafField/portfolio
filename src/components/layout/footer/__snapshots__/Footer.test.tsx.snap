@@ -3,7 +3,7 @@
 exports[`Footerの単体テスト スナップショットテスト 1`] = `
 <div>
   <footer
-    class="flex items-center justify-center bg-mainColor py-[35px] text-white className"
+    class="bg-footerColor flex items-center justify-center py-[35px] text-white className"
   >
     <div
       class="flex flex-col gap-y-[50px] text-center"

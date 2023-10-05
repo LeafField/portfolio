@@ -5,7 +5,7 @@ import { pacifico, roboto } from "../../../lib/font";
 const Footer = () => {
   return (
     <footer
-      className={`flex items-center justify-center bg-mainColor py-[35px] text-white ${roboto.className}`}
+      className={`bg-footerColor flex items-center justify-center py-[35px] text-white ${roboto.className}`}
     >
       <div className="flex flex-col gap-y-[50px] text-center">
         <h2>
