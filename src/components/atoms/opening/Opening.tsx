@@ -1,12 +1,13 @@
-import React, { FC, useState } from "react";
+import React, { FC, ReactNode, useState } from "react";
 import Lottie from "lottie-react";
 import animData from "./animData.json";
 
 type Props = {
   stopAnimation?: boolean;
+  testDom?: boolean;
 };
 
-const Opening: FC<Props> = ({ stopAnimation = false }) => {
+const Opening: FC<Props> = ({ stopAnimation = false, testDom = false }) => {
   const [animStatus, setAnimStatus] = useState<boolean>(false);
   const [invisible, setInvisible] = useState<boolean>(false);
 
@@ -24,6 +25,7 @@ const Opening: FC<Props> = ({ stopAnimation = false }) => {
       className={`fixed inset-0 z-[10100] flex min-h-screen flex-col items-center justify-center bg-white transition-opacity duration-500 ${
         animStatus ? "opacity-0" : ""
       } ${invisible ? "invisible" : ""} `}
+      data-testid="opening"
     >
       <div className="h-[265px] w-[320px]">
         <Lottie
@@ -34,6 +36,9 @@ const Opening: FC<Props> = ({ stopAnimation = false }) => {
         />
       </div>
       <p className="text-xl">ようこそ、わたしのポートフォリオへ！</p>
+      {testDom && (
+        <div data-testid="testButton" onClick={completedHandler}></div>
+      )}
     </div>
   );
 };
