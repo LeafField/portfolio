@@ -21,7 +21,7 @@ const Meta: FC<Props> = ({ title }) => {
       />
       <meta property="og:site_name" content={metadata.title} />
       <meta property="og:description" content={metadata.description} />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <meta name="description" content={metadata.description} />
     </Head>
   );
