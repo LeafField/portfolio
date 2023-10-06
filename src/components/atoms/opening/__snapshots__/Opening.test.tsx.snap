@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Openingの単体テスト スナップショットテスト 1`] = `
+<div>
+  <div
+    class="fixed inset-0 z-[10100] flex min-h-screen flex-col items-center justify-center bg-white transition-opacity duration-500   "
+    data-testid="opening"
+  >
+    <div
+      class="h-[265px] w-[320px]"
+    >
+      <div
+        class="h-[265px] w-[320px]"
+      >
+        <svg
+          height="271"
+          preserveAspectRatio="xMidYMid meet"
+          style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+          viewBox="0 0 327 271"
+          width="327"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs>
+            <clippath
+              id="__lottie_element_24"
+            >
+              <rect
+                height="271"
+                width="327"
+                x="0"
+                y="0"
+              />
+            </clippath>
+          </defs>
+          <g
+            clip-path="url(#__lottie_element_24)"
+          >
+            <g
+              opacity="1"
+              style="display: block;"
+              transform="matrix(0,0,0,0,169.18099975585938,155.05299377441406)"
+            >
+              <g
+                opacity="1"
+                transform="matrix(1,0,0,1,40.4379997253418,40.4379997253418)"
+              >
+                <path
+                  d=" M23.43400001525879,-23.43400001525879 C23.43400001525879,-23.43400001525879 -32.32600021362305,-32.32600021362305 -23.52899932861328,23.527999877929688 C32.32600021362305,32.32600021362305 23.43400001525879,-23.43400001525879 23.43400001525879,-23.43400001525879z"
+                  fill-opacity="0"
+                  stroke="rgb(65,64,66)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-opacity="1"
+                  stroke-width="3.245"
+                />
+              </g>
+              <g
+                opacity="1"
+                transform="matrix(1,0,0,1,33.10599899291992,47.770999908447266)"
+              >
+                <path
+                  d=" M16.19700050354004,-16.19700050354004 C16.19700050354004,-16.19700050354004 -16.19700050354004,16.19700050354004 -16.19700050354004,16.19700050354004"
+                  fill-opacity="0"
+                  stroke="rgb(65,64,66)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-opacity="1"
+                  stroke-width="3.245"
+                />
+              </g>
+            </g>
+            <g
+              opacity="1"
+              style="display: block;"
+              transform="matrix(0,0,0,0,168.9199981689453,155.42799377441406)"
+            >
+              <g
+                opacity="1"
+                transform="matrix(1,0,0,1,40.4379997253418,40.4379997253418)"
+              >
+                <path
+                  d=" M-23.433000564575195,-23.43400001525879 C-23.433000564575195,-23.43400001525879 32.32600021362305,-32.32600021362305 23.52899932861328,23.527999877929688 C-32.32500076293945,32.32600021362305 -23.433000564575195,-23.43400001525879 -23.433000564575195,-23.43400001525879z"
+                  fill-opacity="0"
+                  stroke="rgb(65,64,66)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-opacity="1"
+                  stroke-width="3.245"
+                />
+              </g>
+              <g
+                opacity="1"
+                transform="matrix(1,0,0,1,48.7130012512207,48.7130012512207)"
+              >
+                <path
+                  d=" M-15.253999710083008,-15.253999710083008 C-15.253999710083008,-15.253999710083008 15.253999710083008,15.253999710083008 15.253999710083008,15.253999710083008"
+                  fill-opacity="0"
+                  stroke="rgb(65,64,66)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-opacity="1"
+                  stroke-width="3.245"
+                />
+              </g>
+            </g>
+            <g
+              opacity="1"
+              style="display: block;"
+              transform="matrix(1.6399999856948853,0,0,1.6399999856948853,146.43667602539062,138.94700622558594)"
+            >
+              <g
+                opacity="1"
+                transform="matrix(1,0,0,1,13.713000297546387,24.700000762939453)"
+              >
+                <path
+                  d="M0 0"
+                  fill-opacity="0"
+                  stroke="rgb(65,64,66)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-opacity="1"
+                  stroke-width="3.245"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <p
+      class="text-xl"
+    >
+      ようこそ、わたしのポートフォリオへ！
+    </p>
+  </div>
+</div>
+`;
