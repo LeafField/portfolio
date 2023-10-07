@@ -5,6 +5,7 @@ import Opening from "./Opening";
 describe("Openingの単体テスト", () => {
   it("アニメーション完了時にopacity-0クラスとinvisibleクラスが付与される", async () => {
     render(<Opening testDom={true} />);
+    global.scrollTo = jest.fn();
     await userEvent.click(screen.getByTestId("testButton"));
     await waitFor(() => {
       expect(screen.getByTestId("opening")).toHaveClass("opacity-0");
