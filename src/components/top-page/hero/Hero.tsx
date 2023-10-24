@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Jpg from "../../../../public/sun-binbin-Ddk5lE7tM7U-unsplash2.jpg";
+import Jpg from "../../../../public/sun-binbin-Ddk5lE7tM7U-unsplash3.jpg";
 import styles from "./Hero.module.css";
 import HeroText from "./hero-text/HeroText";
 import Allow from "./allow/Allow";
