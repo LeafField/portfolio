@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { FC } from "react";
-import Jpg from "../../../../public/kazuo-ota-LKe7Rm-RS5c-unsplash.jpg";
+import Jpg from "../../../../public/top-image.jpg";
 import { robotoBold } from "../../../lib/font";
 
 type Props = {
@@ -25,6 +25,7 @@ const PageTop: FC<Props> = ({ title }) => {
         blurDataURL={Jpg.blurDataURL}
         key={Jpg.src}
         priority
+        quality={50}
       />
     </section>
   );
