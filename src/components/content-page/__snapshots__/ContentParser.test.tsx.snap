@@ -59,7 +59,7 @@ exports[`ContentParserの結合テスト スナップショットテスト 1`] =
       <p
         class="pt-1 leading-6"
       >
-        ポートフォリオを載せるサイトです。ナチュラルモダンのイメージでFigmaでデザインしNext.jsとMicroCMSを使用し開発しました
+        ポートフォリオを載せるサイトです。ナチュラルモダンのイメージでFigmaでデザインしNext.jsとMicroCMSを使用し開発しました。
       </p>
       <p
         class="pt-1 leading-6"
@@ -101,16 +101,26 @@ exports[`ContentParserの結合テスト スナップショットテスト 1`] =
           TypeScript
         </li>
         <li>
+          Tailwind CSS
+        </li>
+        <li>
+          Framer Motion
+        </li>
+        <li>
+          lottie-react(Lottie)
+        </li>
+        <li>
           MicroCMS
         </li>
         <li>
           zustand
         </li>
         <li>
-          Tailwind CSS
+          Storybook
         </li>
         <li>
-          Storybook
+          Jest
+          <p />
         </li>
       </ul>
       <p
@@ -121,12 +131,89 @@ exports[`ContentParserの結合テスト スナップショットテスト 1`] =
       <p
         class="pt-1 leading-6"
       >
-        zustandはハンバーガーメニューのstate管理やオープニングアニメーションのフラグ管理に使用。Reduxは最近余り見なくなり、Recoilは開発元が開発出来なくなっているようで今後のReactのstate管理には何が使われるのでしょうか？私はzustandを推したい
+        Next.jsはPage Routerを採用しています。もう一つのポートフォリオであるGit EmptyがApp Routerだった為こちらはPage Routerを採用しました。今後はJamstackサイトもApp Routerを採用されていくのか、Page Routerがこれからも使われていくのか動向を見守りたいです。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        API RoutesはContactページのフォームのバックエンドに利用、さらにnodemailerを使用し通知をメールで送るように設定しています。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        ハンバーガーメニューやモーダルの状態を様々なコンポーネントの状態を管理する必要がありzustandを使用しています。状態管理ライブラリReduxは最近余り見なくなり、Recoilは開発元が開発出来なくなっているようで今後のReactのstate管理には何が使われていくのか気になる所です。
       </p>
       <p
         class="pt-1 leading-6"
       >
         CSSはTailwind CSSを使用。一部疑似要素のプロパティが多いタグに対してはCSS Modulesを使用しています。CSS loaderが今後CSS Modulesについて対応しないと明言しReact公式でも非推奨になった為忘れ去られつつあるCSS ModulesですがNext.jsやViteは独自に対応してくれている為、今後もピンポイントで使う機会も出てくるのかなと思い採用。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        ページ遷移アニメーションにはFramer Motion、オープニングアニメーションにはLottieを使用しています。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        今回Lottieを初使用したのですが、このライブラリの本質は恐らくデザイナーとの対話。デザイナーとエンジニアの合わせ技で最大の力を発揮する、フロントエンドエンジニアの在り方を象徴するようなライブラリだと感じました。とはいえデザイナーの居ない今回はLottieFilesにかわいいアニメーションがあったので使用させていただきましたが、いつかデザイナーと一緒に素晴らしいアニメーションを実装したいものです。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        テストはJestによるスナップショットテストと結合テストに重点を置きました。機能面のテストは慣れてきたのですが、ビジュアルが中心のこうしたJamstackサイトの場合のテストはどういう戦略で行うのがいいのか？現場の皆様の意見も聞いてみたいです。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        無駄に覚えたてのDockerを設定していますが、デプロイ先がVercelなので完全に遊びです。ただ、Next.jsが内部的に使用しているsharpがWindowsとLinuxで別の実行ファイルを持つ為、両方の実行環境を同時に揃える事に無駄に苦戦しました。本当無駄に……
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        とはいえnpm rebuildで別環境用のファイルも同時にインストールできる事を知ったのは大戦果でした。
+      </p>
+      <h3
+        class="mb-2 pt-8 text-2xl font-bold"
+      >
+        デザインについて
+      </h3>
+      <figure>
+        <figure
+          class="relative my-4 aspect-video w-full overflow-hidden sm:w-[500px]"
+        >
+          <img
+            alt="Figmaによるデザインの画像"
+            class="block"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="(min-width:640px) 500px,100vw"
+            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 16w, /_next/image?url=%2Fimg.jpg&w=32&q=75 32w, /_next/image?url=%2Fimg.jpg&w=48&q=75 48w, /_next/image?url=%2Fimg.jpg&w=64&q=75 64w, /_next/image?url=%2Fimg.jpg&w=96&q=75 96w, /_next/image?url=%2Fimg.jpg&w=128&q=75 128w, /_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+          />
+        </figure>
+      </figure>
+      <p
+        class="pt-1 leading-6"
+      >
+        文字で「自分はこういう人間です」と言うよりも作風で見せられたらと思い、シンプルモダンで、かつ見る人がリラックスできるようなデザインをコンセプトにFigmaでデザインをしました。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        全体的に「見えない線」を意識しつつ、少しでもCSSのテクニックを見せられたらという意図とアクセントで所々にブロークングリッドレイアウトを入れています。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        Next.jsにはnext/fontという神機能がある為、タイポグラフィでは惜しみなく3つのフォントを使用しています。
+      </p>
+      <p
+        class="pt-1 leading-6"
+      >
+        止まった時のデザイン先行でアニメーションは後回しにしてしまったのが今回のデザインの最大の失敗点。レスポンシブデザインまで考慮するとあまり派手なアニメーションを付ける事が出来ませんでした。この経験は今後のデザインに生かしていきたいです。
       </p>
       <h3
         class="mb-2 pt-8 text-2xl font-bold"

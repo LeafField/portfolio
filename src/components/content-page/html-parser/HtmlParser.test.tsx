@@ -1,10 +1,10 @@
 import { screen, render } from "@testing-library/react";
 import HtmlParser from "./HtmlParser";
-import { dummyContentData } from "../../../lib/dummyData";
+import { dummyContentData2 } from "../../../lib/dummyData";
 
 describe("HtmlParserの単体テスト", () => {
   it("dummyContentDataに対して、各章のh3タグが正しくレンダリングされているか", () => {
-    render(<HtmlParser post={dummyContentData} />);
+    render(<HtmlParser post={dummyContentData2} />);
     expect(
       screen.getByRole("heading", { name: "アプリ概要" }),
     ).toBeInTheDocument();
@@ -17,7 +17,7 @@ describe("HtmlParserの単体テスト", () => {
   });
 
   it("スナップショットテスト", () => {
-    const { container } = render(<HtmlParser post={dummyContentData} />);
+    const { container } = render(<HtmlParser post={dummyContentData2} />);
     expect(container).toMatchSnapshot();
   });
 });

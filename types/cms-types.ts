@@ -42,7 +42,7 @@ export type portfolio<T = "get"> = Structure<
       blurDataURL?: string | undefined;
     };
 
-    siteurl: string;
+    siteurl?: string | undefined;
     github: string;
   }
 >;
