@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Image from "next/image";
 import { EndPoints } from "../../../../types/cms-types";
 import parse, {
   DOMNode,
@@ -23,6 +24,19 @@ const parserOptions: HTMLReactParserOptions = {
           <ul className="m-[revert] list-disc p-[revert]">
             {domToReact(domNode.children)}
           </ul>
+        );
+      } else if (domNode.name === "img" && domNode.attribs) {
+        return (
+          <figure className="relative my-4 aspect-video w-full overflow-hidden sm:w-[500px]">
+            <Image
+              src={domNode.attribs.src}
+              alt={domNode.attribs.alt}
+              fill
+              sizes="(min-width:640px) 500px,100vw"
+              style={{ width: "100%", objectFit: "cover" }}
+              className="block"
+            />
+          </figure>
         );
       }
     }

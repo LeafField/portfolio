@@ -50,13 +50,15 @@ const ContentImage: FC<Props> = ({ post }) => {
           {post.title}
         </h2>
         <div className="mt-1 flex flex-row-reverse gap-8">
-          <Link
-            className="ml-auto mt-2 block w-fit leading-4 text-blue-700 underline "
-            href={post.siteurl}
-            target="_blank"
-          >
-            サイトURL
-          </Link>
+          {post.siteurl && (
+            <Link
+              className="ml-auto mt-2 block w-fit leading-4 text-blue-700 underline "
+              href={post.siteurl}
+              target="_blank"
+            >
+              サイトURL
+            </Link>
+          )}
           <Link
             className="ml-auto mt-2 block w-fit leading-4 text-blue-700 underline "
             href={post.github}

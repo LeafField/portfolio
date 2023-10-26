@@ -13,13 +13,14 @@ const meta: Meta<typeof HtmlParser> = {
       </div>
     ),
   ],
-  args: {
-    post: dummyContentData,
-  },
 };
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const HtmlParserStory: Story = {};
+export const HtmlParserStory: Story = {
+  args: {
+    post: dummyContentData,
+  },
+};
