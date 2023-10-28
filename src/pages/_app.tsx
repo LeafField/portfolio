@@ -6,6 +6,7 @@ import { useCallback, useEffect } from "react";
 import useStore from "../store";
 import { AnimatePresence } from "framer-motion";
 import Opening from "../components/atoms/opening/Opening";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const { humbargerToggle } = useStore();
@@ -32,6 +33,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
           onExitComplete={() => window.scrollTo(0, 0)}
         >
           <Component key={router.asPath} {...pageProps} />
+          <Analytics />
         </AnimatePresence>
       </Layout>
     </>
