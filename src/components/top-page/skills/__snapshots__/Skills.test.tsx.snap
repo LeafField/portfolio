@@ -3,7 +3,7 @@
 exports[`SKillsの結合テスト スナップショットテスト 1`] = `
 <div>
   <section
-    class="space-y-[60px] bg-whiteColor px-4  pt-[180px]"
+    class="space-y-[60px] overflow-hidden bg-whiteColor px-4  pt-[180px]"
   >
     <h2
       class="className text-center text-[32px]"
@@ -11,124 +11,142 @@ exports[`SKillsの結合テスト スナップショットテスト 1`] = `
       Skills
     </h2>
     <div
-      class="mx-auto flex max-w-7xl  "
+      class="mx-auto flex max-w-7xl flex-col lg:flex-row  "
     >
       <figure
-        class="relative mt-[124px] hidden h-[388px] w-[640px] flex-1 overflow-hidden lg:block"
+        class="relative max-h-[150px] flex-1 overflow-hidden before:absolute before:inset-0 before:z-10 before:block before:shadow-[inset_2px_2px_5px_0_rgba(0,0,0,0.3)] max-lg:mx-[calc(100%-100vw)] md:max-h-[250px] lg:mt-[124px]  lg:h-[29vw] lg:max-h-[388px] lg:w-[640px] "
       >
         <img
           alt="机の上のノート"
-          data-nimg="fill"
+          data-nimg="1"
           decoding="async"
+          height="40"
           loading="lazy"
-          sizes="50vw"
+          sizes="50vw,(max-width:1024) 100vw"
           src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
           srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          style="color: transparent; width: 100%; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          width="40"
         />
       </figure>
       <div
         class="flex-1"
       >
         <div
-          class="relative z-10 mx-auto flex flex-wrap justify-center gap-4 bg-mainColor py-5 pl-5 pr-5 md:gap-12 lg:ml-[-144px] lg:max-w-[785px] lg:pl-[145px]"
+          class="relative z-10 mx-auto mt-[-75px] flex max-w-[328px] flex-col justify-center gap-4 bg-mainColor py-5 pl-5 pr-5  md:mt-[-100px] md:max-w-[600px] lg:ml-[-144px] lg:mt-0 lg:max-w-[785px] lg:gap-8 lg:pl-[145px] min-[1302px]:gap-12"
         >
-          <img
-            alt="HTML"
-            class="h-[50px] w-[35px] md:h-[100px] md:w-[70px] "
-            data-nimg="1"
-            decoding="async"
-            height="100"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-            style="color: transparent;"
-            width="70"
-          />
-          <img
-            alt="CSS"
-            class="h-[50px] w-[35px] md:h-[100px] md:w-[70px] "
-            data-nimg="1"
-            decoding="async"
-            height="100"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-            style="color: transparent;"
-            width="70"
-          />
-          <img
-            alt="JavaScript"
-            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
-            data-nimg="1"
-            decoding="async"
-            height="100"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-            style="color: transparent;"
-            width="100"
-          />
-          <img
-            alt="TypeScript"
-            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
-            data-nimg="1"
-            decoding="async"
-            height="100"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-            style="color: transparent;"
-            width="100"
-          />
-          <img
-            alt="React"
-            class="h-[50px] w-[56px] md:h-[100px] md:w-[112px] "
-            data-nimg="1"
-            decoding="async"
-            height="100"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-            style="color: transparent;"
-            width="112"
-          />
-          <img
-            alt="Next.js"
-            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
-            data-nimg="1"
-            decoding="async"
-            height="100"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-            style="color: transparent;"
-            width="100"
-          />
-          <img
-            alt="Tailwind CSS"
-            class="h-[45px] w-[75px] md:h-[90px] md:w-[150px] "
-            data-nimg="1"
-            decoding="async"
-            height="90"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-            style="color: transparent;"
-            width="150"
-          />
-          <img
-            alt="Nest.js"
-            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] "
-            data-nimg="1"
-            decoding="async"
-            height="100"
-            loading="lazy"
-            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
-            style="color: transparent;"
-            width="100"
-          />
+          <div
+            class="flex justify-evenly"
+          >
+            <div
+              class="flex h-[50px] w-[50px] items-center justify-center md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px]"
+            >
+              <img
+                alt="HTML"
+                class="h-[50px] w-[35px] md:h-[75px] md:w-[52px] xl:h-[100px] xl:w-[70px]  "
+                data-nimg="1"
+                decoding="async"
+                height="100"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+                style="color: transparent;"
+                width="70"
+              />
+            </div>
+            <div
+              class="flex h-[50px] w-[50px] items-center justify-center md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px]"
+            >
+              <img
+                alt="CSS"
+                class="h-[50px] w-[35px] md:h-[75px] md:w-[52px] xl:h-[100px] xl:w-[70px] "
+                data-nimg="1"
+                decoding="async"
+                height="100"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+                style="color: transparent;"
+                width="70"
+              />
+            </div>
+            <img
+              alt="JavaScript"
+              class="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px] "
+              data-nimg="1"
+              decoding="async"
+              height="100"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+              style="color: transparent;"
+              width="100"
+            />
+            <img
+              alt="TypeScript"
+              class="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px] "
+              data-nimg="1"
+              decoding="async"
+              height="100"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+              style="color: transparent;"
+              width="100"
+            />
+          </div>
+          <div
+            class="flex justify-evenly"
+          >
+            <img
+              alt="React"
+              class="h-[50px] w-[56px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[112px] "
+              data-nimg="1"
+              decoding="async"
+              height="100"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+              style="color: transparent;"
+              width="112"
+            />
+            <img
+              alt="Next.js"
+              class="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px] "
+              data-nimg="1"
+              decoding="async"
+              height="100"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+              style="color: transparent;"
+              width="100"
+            />
+            <img
+              alt="Tailwind CSS"
+              class="h-[45px] w-[75px] md:h-[75px] md:w-[75px] xl:h-[90px] xl:w-[150px] "
+              data-nimg="1"
+              decoding="async"
+              height="90"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+              style="color: transparent;"
+              width="150"
+            />
+            <img
+              alt="Nest.js"
+              class="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px] "
+              data-nimg="1"
+              decoding="async"
+              height="100"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+              style="color: transparent;"
+              width="100"
+            />
+          </div>
         </div>
         <div
           class="space-y-2 pt-4 lg:p-5"

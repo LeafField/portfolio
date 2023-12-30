@@ -13,7 +13,7 @@ const Nav = () => {
       data-testid="navi"
       aria-hidden={!humbarger}
       className={`fixed right-0 top-0 z-0 flex h-[calc(100svh-64px)] max-h-[650px] flex-col text-main-textColor sm:h-[calc(100svh-96px)] ${
-        !humbarger && "opacity-0 delay-[0.2s]"
+        !humbarger && "hidden opacity-0 delay-[0.2s]"
       } `}
     >
       <h2
@@ -28,6 +28,7 @@ const Nav = () => {
           <Link
             scroll={false}
             href={"/"}
+            aria-hidden={!humbarger}
             className="relative block w-min after:block after:h-[1px] after:w-[100%] after:scale-0 after:bg-main-textColor after:transition-transform after:duration-300 hover:after:scale-100 "
           >
             TOP
