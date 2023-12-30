@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { pacifico, roboto } from "../../../lib/font";
 import useStore from "../../../store";
 
 const Nav = () => {
   const { humbarger } = useStore();
+  const [hidden, setHidden] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!humbarger) {
+      setTimeout(() => {
+        setHidden(true);
+      }, 400);
+    } else {
+      setHidden(false);
+    }
+  }, [humbarger]);
 
   return (
     <nav
@@ -13,8 +24,8 @@ const Nav = () => {
       data-testid="navi"
       aria-hidden={!humbarger}
       className={`fixed right-0 top-0 z-0 flex h-[calc(100svh-64px)] max-h-[650px] flex-col text-main-textColor sm:h-[calc(100svh-96px)] ${
-        !humbarger && "hidden opacity-0 delay-[0.2s]"
-      } `}
+        !humbarger && "opacity-0 delay-[0.3s]"
+      } ${hidden && "hidden"} `}
     >
       <h2
         className={`${pacifico.className} mx-auto mt-[80px] w-fit text-5xl sm:mt-[112px]`}

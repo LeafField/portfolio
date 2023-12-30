@@ -30,6 +30,7 @@ describe("Layoutの結合テスト", () => {
       screen.getByRole("button", { name: "ハンバーガーメニュー" }),
     ).toHaveAttribute("aria-expanded", "true");
     expect(screen.getByTestId("navi")).toHaveAttribute("aria-hidden", "false");
+    expect(screen.getByTestId("navi")).not.toHaveClass("hidden");
   });
 
   it("ナビゲーションのリンクをクリックした時にハンバーガーメニューは閉じるか", async () => {
@@ -43,16 +44,11 @@ describe("Layoutの結合テスト", () => {
       name: "ハンバーガーメニュー",
     });
     await userEvent.click(humbarger);
-
-    waitFor(() => {
-      expect(
-        screen.getByRole("button", { name: "ハンバーガーメニュー" }),
-      ).toHaveAttribute("aria-expanded", "true");
-    });
-
     await userEvent.click(screen.getByTestId("navigation-list"));
+
     await waitFor(() => {
       expect(humbarger).toHaveAttribute("aria-expanded", "false");
+      expect(screen.getByTestId("navi")).toHaveClass("hidden");
     });
   });
 
