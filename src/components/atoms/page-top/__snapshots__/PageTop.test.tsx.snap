@@ -3,23 +3,28 @@
 exports[`PageTopの単体テスト スナップショットテスト 1`] = `
 <div>
   <section
-    class="relative flex h-[200px] min-w-full items-center justify-center overflow-hidden before:absolute before:inset-0 before:z-10 before:block before:bg-[rgba(0,0,0,0.44)] sm:h-[400px] "
+    class="before:blackCover relative flex h-[200px] min-w-full items-center justify-center overflow-hidden sm:h-[400px] "
   >
     <h2
       class="className relative z-20 text-center text-3xl text-whiteColor sm:text-5xl "
     >
       Portfolio
     </h2>
-    <img
-      alt="明るい森の画像"
-      data-nimg="fill"
-      decoding="async"
-      fetchpriority="high"
-      sizes="100vw"
-      src="/_next/image?url=%2Fimg.jpg&w=3840&q=50"
-      srcset="/_next/image?url=%2Fimg.jpg&w=640&q=50 640w, /_next/image?url=%2Fimg.jpg&w=750&q=50 750w, /_next/image?url=%2Fimg.jpg&w=828&q=50 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=50 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=50 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=50 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=50 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=50 3840w"
-      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent; transition: 0.3s; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-    />
+    <figure
+      class="absolute inset-0 h-[calc(100%+150px)] w-full"
+      style="transform: translate(0, 0);"
+    >
+      <img
+        alt="明るい森の画像"
+        data-nimg="fill"
+        decoding="async"
+        fetchpriority="high"
+        sizes="100vw"
+        src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+      />
+    </figure>
   </section>
 </div>
 `;
