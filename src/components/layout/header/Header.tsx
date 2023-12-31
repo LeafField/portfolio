@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { pacifico } from "../../../lib/font";
 import Humbarger from "../humbarger/Humbarger";
 import Link from "next/link";
 import useStore from "../../../store";
 
 const Header = () => {
-  const { humbarger } = useStore();
+  const { humbarger, updateHeaderSize } = useStore();
+  const headerRef = useRef<HTMLHeadElement>(null);
+
+  useEffect(() => {
+    updateHeaderSize(headerRef.current!.offsetHeight);
+  }, [headerRef, updateHeaderSize]);
+
   return (
-    <header className="fixed left-0 right-0 top-0 z-[1000] w-full bg-whiteColor shadow-md">
+    <header
+      ref={headerRef}
+      className="fixed left-0 right-0 top-0 z-[1000] w-full bg-whiteColor shadow-md"
+    >
       <div className="mx-auto flex h-16 max-w-[1366px] items-center justify-between px-11 sm:h-24 ">
         <h1>
           <Link

@@ -11,6 +11,8 @@ type State = {
   humbargerToggle: (payload: boolean) => void;
   modal: Modal;
   showModal: (payload: Modal) => void;
+  headerSize: number;
+  updateHeaderSize: (payload: number) => void;
 };
 
 const useStore = create<State>((set) => ({
@@ -32,6 +34,8 @@ const useStore = create<State>((set) => ({
         message: payload.message,
       },
     }),
+  headerSize: 0,
+  updateHeaderSize: (payload) => set({ headerSize: payload }),
 }));
 
 export default useStore;

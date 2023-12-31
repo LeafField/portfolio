@@ -1,26 +1,59 @@
 import Image from "next/image";
-import React from "react";
-import Jpg from "../../../../public/sun-binbin-Ddk5lE7tM7U-unsplash3.jpg";
+import React, { useRef } from "react";
 import styles from "./Hero.module.css";
 import HeroText from "./hero-text/HeroText";
 import Allow from "./allow/Allow";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import hero from "../../../../public/hero.jpg";
+import useStore from "../../../store";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
+  const heroRef = useRef<HTMLElement>(null);
+  const imageRef = useRef<HTMLElement>(null);
+
+  const { headerSize } = useStore();
+
+  useGSAP(
+    () => {
+      gsap.to(imageRef.current, {
+        y: -400,
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: `-100p x top`,
+          end: "bottom top",
+          scrub: 0.6,
+        },
+      });
+    },
+    { scope: heroRef },
+  );
+
   return (
     <section
       className={`${styles.cover} relative flex h-[calc(100svh-64px)] flex-col items-center justify-between overflow-hidden px-4 pt-8 sm:h-[calc(100svh-96px)] sm:justify-center`}
+      ref={heroRef}
     >
-      <figure className="absolute inset-0 h-[calc(100%+150px)] w-full">
+      <figure
+        id="heroImg"
+        className="absolute inset-0 h-[calc(100%+400px)] w-full"
+        ref={imageRef}
+      >
         <Image
-          src={Jpg}
+          src={hero}
           alt="森林と湖の画像"
           fill
-          style={{ objectFit: "cover", transition: "0.6s" }}
+          style={{
+            objectFit: "cover",
+          }}
           sizes="100vw"
           priority
           key={`森林と湖の画像`}
           placeholder="blur"
-          blurDataURL={Jpg.blurDataURL}
+          blurDataURL={hero.blurDataURL}
         />
       </figure>
       <HeroText />

@@ -14,6 +14,7 @@
     "update": "ncu -u"
   },
   "dependencies": {
+    "@gsap/react": "^2.0.2",
     "@hookform/resolvers": "^3.3.2",
     "@plaiceholder/next": "^3.0.0",
     "@types/aria-query": "^5.0.3",
@@ -25,6 +26,7 @@
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.5",
     "framer-motion": "^10.16.4",
+    "gsap": "^3.12.4",
     "html-react-parser": "^4.2.5",
     "lottie-react": "^2.4.0",
     "next": "13.5.5",

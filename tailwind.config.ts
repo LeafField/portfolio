@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
+import { CSSProperties } from "react";
 
 const config: Config = {
   content: [
@@ -35,6 +37,26 @@ const config: Config = {
     },
   },
 
-  plugins: [],
+  plugins: [
+    plugin(({ addComponents }) => {
+      addComponents({
+        ".innerShadow": {
+          position: "absolute",
+          inset: "0",
+          zIndex: "10",
+          display: "block",
+          boxShadow: "inset 2px 2px 5px rgba(0,0,0,0.3)",
+        } satisfies CSSProperties,
+
+        ".blackCover": {
+          position: "absolute",
+          inset: "0",
+          zIndex: "10",
+          display: "block",
+          backgroundColor: "rgba(0,0,0,0.44)",
+        } satisfies CSSProperties,
+      });
+    }),
+  ],
 };
 export default config;

@@ -20,6 +20,7 @@ const dummyType = async () => {
 };
 
 describe("Formの結合テスト", () => {
+  window.scrollTo = jest.fn();
   afterEach(() => {
     jest.resetAllMocks();
     jest.resetModules();

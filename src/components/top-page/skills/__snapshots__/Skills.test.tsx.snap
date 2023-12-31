@@ -13,22 +13,27 @@ exports[`SKillsの結合テスト スナップショットテスト 1`] = `
     <div
       class="mx-auto flex max-w-7xl flex-col lg:flex-row  "
     >
-      <figure
-        class="relative max-h-[150px] flex-1 overflow-hidden before:absolute before:inset-0 before:z-10 before:block before:shadow-[inset_2px_2px_5px_0_rgba(0,0,0,0.3)] max-lg:mx-[calc(100%-100vw)] md:max-h-[250px] lg:mt-[124px]  lg:h-[29vw] lg:max-h-[388px] lg:w-[640px] "
+      <div
+        class="before:innerShadow relative max-h-[150px] flex-1 overflow-hidden  max-lg:mx-[calc(100%-100vw)] md:max-h-[250px] lg:mt-[124px]  lg:h-[29vw] lg:max-h-[388px] lg:w-[640px] "
       >
-        <img
-          alt="机の上のノート"
-          data-nimg="1"
-          decoding="async"
-          height="40"
-          loading="lazy"
-          sizes="50vw,(max-width:1024) 100vw"
-          src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-          srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-          style="color: transparent; width: 100%; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-          width="40"
-        />
-      </figure>
+        <figure
+          class="relative h-fit w-full"
+          style="transform: translate(0, 0);"
+        >
+          <img
+            alt="机の上のノート"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            sizes="50vw,(max-width:1024) 100vw"
+            src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+            style="color: transparent; width: 100%; height: auto; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+            width="40"
+          />
+        </figure>
+      </div>
       <div
         class="flex-1"
       >
