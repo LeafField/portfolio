@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Head from "next/head";
 import { metadata } from "./metadata";
-import thumbnailImage from "../../../../public/portfolioSite.jpeg";
+import thumbnailImage from "../../../../public/new_portforio.jpg";
 
 type Props = {
   title?: string;
