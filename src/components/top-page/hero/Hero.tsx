@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import hero from "../../../../public/hero.jpg";
-import useStore from "../../../store";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,15 +14,13 @@ const Hero = () => {
   const heroRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLElement>(null);
 
-  const { headerSize } = useStore();
-
   useGSAP(
     () => {
       gsap.to(imageRef.current, {
         y: -400,
         scrollTrigger: {
           trigger: heroRef.current,
-          start: `-100p x top`,
+          start: `-100px top`,
           end: "bottom top",
           scrub: 0.6,
         },
