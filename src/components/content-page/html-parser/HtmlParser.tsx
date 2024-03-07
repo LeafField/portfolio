@@ -31,7 +31,8 @@ const parserOptions: HTMLReactParserOptions = {
             <Image
               src={domNode.attribs.src}
               alt={domNode.attribs.alt}
-              fill
+              width={Number(domNode.attribs.width)}
+              height={Number(domNode.attribs.height)}
               sizes="(min-width:640px) 500px,100vw"
               style={{ width: "100%", objectFit: "cover" }}
               className="block"
