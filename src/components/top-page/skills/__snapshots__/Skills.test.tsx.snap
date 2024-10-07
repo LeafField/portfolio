@@ -14,11 +14,10 @@ exports[`SKillsの結合テスト スナップショットテスト 1`] = `
       class="mx-auto flex max-w-7xl flex-col lg:flex-row  "
     >
       <div
-        class="before:innerShadow relative max-h-[150px] flex-1 overflow-hidden  max-lg:mx-[calc(100%-100vw)] md:max-h-[250px] lg:mt-[124px]  lg:h-[29vw] lg:max-h-[388px] lg:w-[640px] "
+        class="relative max-h-[150px] flex-1 overflow-hidden before:innerShadow  max-lg:mx-[calc(100%-100vw)] md:max-h-[250px] lg:mt-[124px]  lg:h-[29vw] lg:max-h-[388px] lg:w-[640px] "
       >
         <figure
           class="relative h-fit w-full"
-          style="transform: translate(0, 0);"
         >
           <img
             alt="机の上のノート"
